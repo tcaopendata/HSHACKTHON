@@ -35,7 +35,6 @@
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year 交通部公路總局公共運輸規劃競賽-戀戀臺3線推廣網</p>
-            <p ALIGN="right">現在時間： @DateTime.Now.ToString("yyyy/MM/dd hh"+"點")</p>
         </footer>
     </div>
 
@@ -48,6 +47,12 @@
     <script>
         $(document).ready(function () {
             $('.slideshow').cycle();
+
+            $('.zoom').cycle({
+                fx: 'zoom',
+                sync: false,
+                delay: -200
+            });
         });
     </script>
 </body>
