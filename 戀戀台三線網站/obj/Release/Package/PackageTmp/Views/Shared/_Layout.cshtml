@@ -7,6 +7,11 @@
     <title>@ViewBag.Title 戀戀台3線，綠色遊台灣</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <style>
+        .contact-info {
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -25,7 +30,7 @@
                     <li>@Html.ActionLink("首頁", "Index", "Home")</li>
                     <li>@Html.ActionLink("景點介紹", "Attractions", "Home")</li>
                     <li>@Html.ActionLink("交通方式", "Transportation", "Home")</li>
-                    <li>@Html.ActionLink("聯絡我們","Contact_us","Home")</li>
+                    <li>@Html.ActionLink("聯絡我們", "Contact_us", "Home")</li>
                 </ul>
             </div>
         </div>
