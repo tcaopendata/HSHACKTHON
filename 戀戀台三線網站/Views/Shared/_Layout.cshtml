@@ -9,20 +9,31 @@
     @Scripts.Render("~/bundles/modernizr")
     <style>
         .contact-info {
-            font-size: 20px;
+            font-size: 25px;
         }
+        #bg {
+            height: 3000px;
+        }
+
+       #advertisement {
+            display: none;
+            position: absolute;
+        }
+
+        #advertisement img {
+            border: none;
+        }
+
+        #close_ad {
+            display: block;
+        }
+
     </style>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                @*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>*@
-                @*@Html.ActionLink("戀戀臺3線", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
                 <a href="http://lovetaiwan3rdroad.azurewebsites.net/"><img src="~/Image/LOGO-白.png" width="200"height="50"></a>
             </div>
             <div class="navbar-collapse collapse">
@@ -58,6 +69,38 @@
                 sync: false,
                 delay: -200
             });
+
+
+            var $window = $(window), //視窗物件
+                $ad = $('#advertisement').css('opacity', 0).show(), //讓物件透明，並顯示出來，目地是一開始移動到定位時使用者看不到
+                width = $ad.width(), //取得advertisement寬度
+                height = $ad.height(), //取得advertisement長度
+                diffX = 10, //廣告與右方邊距
+                diffY = 10, //廣告與下方邊距
+                speed = 800; //移動速度，花多少ms完成移動，越小越快
+
+            //先將廣告移到定點
+            $ad.css({
+                top: $(document).height(), //移到最下面
+                left: $window.width() - width - diffX, //移到右邊定點
+                opacity: 1 //解除透明
+            });
+
+            //加上scroll和resize事件
+            $window.on("scroll resize", function () {
+                //控制廣告移動
+                $ad.stop().animate({
+                    top: $(this).scrollTop() + $(this).height() - height - diffY,
+                    left: $(this).scrollLeft() + $(this).width() - width - diffX
+                }, speed);
+            }).scroll();//啟動scroll
+
+            //關閉廣告
+            $('#close_ad').click(function () {
+                $('#advertisement').hide();
+            });
+
+
         });
     </script>
 </body>

@@ -159,6 +159,8 @@
     <Content Include="Image\LOGO-白.png" />
     <Content Include="Image\LOGO-黑.png" />
     <Content Include="Image\LOGO.png" />
+    <Content Include="Map\Map3.html" />
+    <Content Include="Map\Map2.html" />
     <Content Include="Map\Map1.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
