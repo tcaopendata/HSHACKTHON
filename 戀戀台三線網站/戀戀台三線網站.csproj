@@ -155,6 +155,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Image\AD_logo.png" />
     <Content Include="Image\Bus_icon.png" />
     <Content Include="Image\LOGO-白.png" />
     <Content Include="Image\LOGO-黑.png" />
