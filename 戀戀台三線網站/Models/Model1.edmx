@@ -4,7 +4,17 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="GuestBookModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="GuestBookModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Contact_us">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="User_comments" Type="nvarchar" MaxLength="600" Nullable="false" />
+        </EntityType>
         <EntityType Name="Table">
           <Key>
             <PropertyRef Name="Id" />
@@ -14,19 +24,11 @@
           <Property Name="Content" Type="nvarchar" MaxLength="500" Nullable="false" />
           <Property Name="PostTime" Type="datetime" Nullable="false" />
         </EntityType>
-        <EntityType Name="Test0728">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
-          <Property Name="Name" Type="nchar" MaxLength="50" />
-        </EntityType>
         <EntityContainer Name="GuestBookModelStoreContainer">
+          <EntitySet Name="Contact_us" EntityType="Self.Contact_us" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Table" EntityType="Self.Table" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Test0728" EntityType="Self.Test0728" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="GuestBookModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -39,17 +41,20 @@
           <Property Name="Content" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="PostTime" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
-        <EntityType Name="Test0728">
+        <EntityContainer Name="GuestBookEntitiesweb" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Tables" EntityType="Self.Table" />
+          <EntitySet Name="Contact_us" EntityType="GuestBookModel.Contact_us" />
+        </EntityContainer>
+        <EntityType Name="Contact_us">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" />
-          <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Id" Type="Guid" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="User_comments" Type="String" Nullable="false" MaxLength="600" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="GuestBookEntitiesweb" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Tables" EntityType="Self.Table" />
-          <EntitySet Name="Test0728" EntityType="Self.Test0728" />
-        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -66,11 +71,14 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Test0728">
-            <EntityTypeMapping TypeName="GuestBookModel.Test0728">
-              <MappingFragment StoreEntitySet="Test0728">
-                <ScalarProperty Name="Id" ColumnName="Id" />
+          <EntitySetMapping Name="Contact_us">
+            <EntityTypeMapping TypeName="GuestBookModel.Contact_us">
+              <MappingFragment StoreEntitySet="Contact_us">
+                <ScalarProperty Name="User_comments" ColumnName="User_comments" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

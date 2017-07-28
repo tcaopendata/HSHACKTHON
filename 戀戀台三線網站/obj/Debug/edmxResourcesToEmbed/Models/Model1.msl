@@ -11,11 +11,14 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Test0728">
-      <EntityTypeMapping TypeName="GuestBookModel.Test0728">
-        <MappingFragment StoreEntitySet="Test0728">
-          <ScalarProperty Name="Id" ColumnName="Id" />
+    <EntitySetMapping Name="Contact_us">
+      <EntityTypeMapping TypeName="GuestBookModel.Contact_us">
+        <MappingFragment StoreEntitySet="Contact_us">
+          <ScalarProperty Name="User_comments" ColumnName="User_comments" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

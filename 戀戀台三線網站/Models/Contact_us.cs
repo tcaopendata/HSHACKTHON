@@ -12,9 +12,12 @@ namespace 戀戀台三線網站.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Test0728
+    public partial class Contact_us
     {
-        public int Id { get; set; }
+        public System.Guid Id { get; set; }
         public string Name { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string User_comments { get; set; }
     }
 }

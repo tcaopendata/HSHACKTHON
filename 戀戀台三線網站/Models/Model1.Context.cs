@@ -26,6 +26,6 @@ namespace 戀戀台三線網站.Models
         }
     
         public virtual DbSet<Table> Tables { get; set; }
-        public virtual DbSet<Test0728> Test0728 { get; set; }
+        public virtual DbSet<Contact_us> Contact_us { get; set; }
     }
 }
