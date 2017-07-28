@@ -1,2 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters />
+<parameters>
+  <parameter name="GuestBookEntities-Web.config Connection String" description="GuestBookEntities 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="metadata=res://*/Models.GB_Model.csdl|res://*/Models.GB_Model.ssdl|res://*/Models.GB_Model.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(LocalDB)\MSSQLLocalDB;attachdbfilename=|DataDirectory|\GuestBook.mdf;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\C\#_Project\\戀戀台三線網站\\戀戀台三線網站\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='GuestBookEntities']/@connectionString" />
+  </parameter>
+  <parameter name="GuestBookEntities1-Web.config Connection String" description="GuestBookEntities1 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="metadata=res://*/Models.GBModel.csdl|res://*/Models.GBModel.ssdl|res://*/Models.GBModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(LocalDB)\MSSQLLocalDB;attachdbfilename=|DataDirectory|\GuestBook.mdf;integrated security=True;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\C\#_Project\\戀戀台三線網站\\戀戀台三線網站\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='GuestBookEntities1']/@connectionString" />
+  </parameter>
+  <parameter name="GuestBookEntities2-Web.config Connection String" description="GuestBookEntities2 應用程式在 web.config 中用來存取資料庫的連接字串。" defaultValue="metadata=res://*/Models.GBModel.csdl|res://*/Models.GBModel.ssdl|res://*/Models.GBModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(LocalDB)\MSSQLLocalDB;attachdbfilename=|DataDirectory|\GuestBook.mdf;integrated security=True;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\C\#_Project\\戀戀台三線網站\\戀戀台三線網站\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='GuestBookEntities2']/@connectionString" />
+  </parameter>
+</parameters>
