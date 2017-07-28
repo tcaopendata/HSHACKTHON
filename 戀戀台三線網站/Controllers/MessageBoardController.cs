@@ -126,5 +126,12 @@ namespace 戀戀台三線網站.Controllers
             }
             base.Dispose(disposing);
         }
+
+
+        //供管理者修改
+        public ActionResult Jim()
+        {
+            return View(db.Tables.ToList());
+        }
     }
 }

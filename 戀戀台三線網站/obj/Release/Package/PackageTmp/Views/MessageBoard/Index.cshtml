@@ -16,7 +16,7 @@
             <strong>時間</strong>
         </div>
         <div class="col-sm-3 ">
-            <strong>操作選項</strong>
+            <strong>選項</strong>
         </div>
     </div>
 
@@ -40,9 +40,9 @@
                 </p>
             </div>
             <div class="col-sm-3">
-                @Html.ActionLink("修改", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("檢視", "Details", new { id = item.Id }) |
-                @Html.ActionLink("刪除", "Delete", new { id = item.Id })
+                @*@Html.ActionLink("修改", "Edit", new { id = item.Id }) |*@
+               | @Html.ActionLink("檢視", "Details", new { id = item.Id }) |
+                @*@Html.ActionLink("刪除", "Delete", new { id = item.Id })*@
             </div>
         </div>
     }

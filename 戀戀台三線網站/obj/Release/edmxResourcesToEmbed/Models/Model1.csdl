@@ -9,15 +9,18 @@
     <Property Name="Content" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="PostTime" Type="DateTime" Nullable="false" Precision="3" />
   </EntityType>
-  <EntityType Name="Test0728">
+  <EntityContainer Name="GuestBookEntitiesweb" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tables" EntityType="Self.Table" />
+    <EntitySet Name="Contact_us" EntityType="GuestBookModel.Contact_us" />
+  </EntityContainer>
+  <EntityType Name="Contact_us">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" />
-    <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="User_comments" Type="String" Nullable="false" MaxLength="600" FixedLength="false" Unicode="true" />
   </EntityType>
-  <EntityContainer Name="GuestBookEntitiesweb" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Tables" EntityType="Self.Table" />
-    <EntitySet Name="Test0728" EntityType="Self.Test0728" />
-  </EntityContainer>
 </Schema>

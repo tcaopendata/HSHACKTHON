@@ -301,6 +301,7 @@
     <Content Include="Views\MessageBoard\Details.cshtml" />
     <Content Include="Views\MessageBoard\Edit.cshtml" />
     <Content Include="Views\MessageBoard\Index.cshtml" />
+    <Content Include="Views\MessageBoard\Jim.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
