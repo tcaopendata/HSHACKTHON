@@ -1,0 +1,40 @@
+﻿@model IEnumerable<戀戀台三線網站.Models.Table>
+
+   <p style="font-size:20px;color:black;">
+    @Html.ActionLink("留下足跡", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            <strong>標題</strong>
+        </th>
+        <th>
+            <strong>內文</strong>
+        </th>
+        <th>
+            <strong>推播時間</strong>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Content)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PostTime)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

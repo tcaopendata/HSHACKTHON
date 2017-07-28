@@ -157,6 +157,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\GuestBookController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MessageBoardController.cs" />
     <Compile Include="Controllers\PlanController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -295,6 +296,11 @@
     <Content Include="Views\GuestBook\Details.cshtml" />
     <Content Include="Views\GuestBook\Edit.cshtml" />
     <Content Include="Views\GuestBook\Index.cshtml" />
+    <Content Include="Views\MessageBoard\Create.cshtml" />
+    <Content Include="Views\MessageBoard\Delete.cshtml" />
+    <Content Include="Views\MessageBoard\Details.cshtml" />
+    <Content Include="Views\MessageBoard\Edit.cshtml" />
+    <Content Include="Views\MessageBoard\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
