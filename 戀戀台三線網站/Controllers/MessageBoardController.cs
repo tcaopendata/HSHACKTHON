@@ -80,10 +80,11 @@ namespace 戀戀台三線網站.Controllers
         // 詳細資訊，請參閱 https://go.microsoft.com/fwlink/?LinkId=317598。
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,Content,PostTime")] Table table)
+        public ActionResult Edit(Table table)
         {
             if (ModelState.IsValid)
             {
+                table.PostTime = DateTime.Now;
                 db.Entry(table).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
