@@ -1,9 +1,7 @@
 ﻿@model IEnumerable<戀戀台三線網站.Models.Table>
-
 <p style="font-size:20px;color:black;">
     @Html.ActionLink("留下足跡", "Create")
 </p>
-
 <table class="table">
     <div class="row">
         <div class="col-sm-3 ">
@@ -20,7 +18,7 @@
         </div>
     </div>
 
-@*跑留言板資料庫內容出來*@
+    @*跑留言板資料庫內容出來*@
     @foreach (var item in Model)
     {
         <div class="row">
@@ -41,9 +39,40 @@
             </div>
             <div class="col-sm-3">
                 @*@Html.ActionLink("修改", "Edit", new { id = item.Id }) |*@
-               | @Html.ActionLink("檢視", "Details", new { id = item.Id }) |
+                | @Html.ActionLink("檢視", "Details", new { id = item.Id }) |
                 @*@Html.ActionLink("刪除", "Delete", new { id = item.Id })*@
             </div>
         </div>
     }
+    <hr style="margin-bottom:5px !important; margin-top:5px !important; border: 0; height: 2px; background: #333;background-image: linear-gradient(to right, #ccc, #333, #ccc); ">
+    <div class="row">
+
+        <div class="col-sm-10">
+        </div>
+        <div class="col-sm-2">
+           <button class="btn-info" id="Edit-btn">
+               管理修改
+        </button>
+    </div>
 </table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $('#Edit-btn').click(function () {
+        var password = prompt("請輸入密碼", "")
+        if (password == "5681") {
+            alert('Welcome!')
+            location.href = '/MessageBoard/Jim'
+        }
+        else {
+            if (password == "null") {
+                alert('請再輸入一次密碼');
+                //location.href = 'examples/javascript/16ex2.html';
+            }
+            else
+                if (password != "5681") {
+                    alert('請再輸入一次密碼');
+                    //location.href = 'examples/javascript/16ex2.html';
+                }
+        } 
+    })
+</script>

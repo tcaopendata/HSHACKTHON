@@ -13,7 +13,8 @@
           <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Phone" Type="nvarchar" MaxLength="20" Nullable="false" />
-          <Property Name="User_comments" Type="nvarchar" MaxLength="600" Nullable="false" />
+          <Property Name="UserComments" Type="nvarchar" MaxLength="600" Nullable="false" />
+          <Property Name="PostTime" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityType Name="Table">
           <Key>
@@ -53,7 +54,8 @@
           <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Phone" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="User_comments" Type="String" Nullable="false" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="UserComments" Type="String" Nullable="false" MaxLength="600" FixedLength="false" Unicode="true" />
+          <Property Name="PostTime" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -74,7 +76,8 @@
           <EntitySetMapping Name="Contact_us">
             <EntityTypeMapping TypeName="GuestBookModel.Contact_us">
               <MappingFragment StoreEntitySet="Contact_us">
-                <ScalarProperty Name="User_comments" ColumnName="User_comments" />
+                <ScalarProperty Name="PostTime" ColumnName="PostTime" />
+                <ScalarProperty Name="UserComments" ColumnName="UserComments" />
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="Name" ColumnName="Name" />

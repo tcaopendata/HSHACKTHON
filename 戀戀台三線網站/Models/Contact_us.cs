@@ -18,6 +18,7 @@ namespace 戀戀台三線網站.Models
         public string Name { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
-        public string User_comments { get; set; }
+        public string UserComments { get; set; }
+        public System.DateTime PostTime { get; set; }
     }
 }

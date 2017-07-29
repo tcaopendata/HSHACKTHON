@@ -14,7 +14,8 @@
     <EntitySetMapping Name="Contact_us">
       <EntityTypeMapping TypeName="GuestBookModel.Contact_us">
         <MappingFragment StoreEntitySet="Contact_us">
-          <ScalarProperty Name="User_comments" ColumnName="User_comments" />
+          <ScalarProperty Name="PostTime" ColumnName="PostTime" />
+          <ScalarProperty Name="UserComments" ColumnName="UserComments" />
           <ScalarProperty Name="Phone" ColumnName="Phone" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Name" ColumnName="Name" />

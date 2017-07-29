@@ -11,14 +11,12 @@ namespace 戀戀台三線網站.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Table
     {
         public System.Guid Id { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy/MM/dd HH時mm分}")]
         public System.DateTime PostTime { get; set; }
     }
 }
