@@ -51,7 +51,7 @@ namespace 戀戀台三線網站.Controllers
             if (ModelState.IsValid)
             {
                 table.Id = Guid.NewGuid();
-                table.PostTime = DateTime.Now;
+                table.PostTime = DateTime.UtcNow.AddHours(08); 
                 db.Tables.Add(table);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -84,7 +84,7 @@ namespace 戀戀台三線網站.Controllers
         {
             if (ModelState.IsValid)
             {
-                table.PostTime = DateTime.Now;
+                table.PostTime = DateTime.UtcNow.AddHours(08); 
                 db.Entry(table).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -115,7 +115,7 @@ namespace 戀戀台三線網站.Controllers
             Table table = db.Tables.Find(id);
             db.Tables.Remove(table);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Jim");
         }
 
         protected override void Dispose(bool disposing)

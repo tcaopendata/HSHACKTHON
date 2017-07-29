@@ -1,6 +1,6 @@
-﻿@model IEnumerable<戀戀台三線網站.Models.Table>
+﻿@*@model IEnumerable<戀戀台三線網站.Models.Contact_us>
 
-@*@{
+@{
     Layout = null;
 }
 
@@ -11,20 +11,26 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
 </head>
-<body>*@
-    <p style="font-size:20px;color:black;">
-        @Html.ActionLink("留下足跡", "Create")
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
     </p>
     <table class="table">
         <tr>
             <th>
-               <strong>標題</strong>
+                @Html.DisplayNameFor(model => model.Name)
             </th>
             <th>
-                <strong>內文</strong>
+                @Html.DisplayNameFor(model => model.Email)
             </th>
             <th>
-               <strong>推播時間</strong>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserComments)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostTime)
             </th>
             <th></th>
         </tr>
@@ -32,10 +38,16 @@
     @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Title)
+                @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Content)
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserComments)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.PostTime)
@@ -49,5 +61,6 @@
     }
     
     </table>
-@*</body>
+</body>
 </html>*@
+<h2>此頁暫停服務</h2>

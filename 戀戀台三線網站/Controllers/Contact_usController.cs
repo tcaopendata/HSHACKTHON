@@ -10,109 +10,109 @@ using 戀戀台三線網站.Models;
 
 namespace 戀戀台三線網站.Controllers
 {
-    public class GuestBookController : Controller
+    public class Contact_usController : Controller
     {
-        private GuestBookEntities2 db = new GuestBookEntities2();
+        private GuestBookEntitiesweb db = new GuestBookEntitiesweb();
 
-        // GET: GuestBook
+        // GET: Contact_us
         public ActionResult Index()
         {
-            return View(db.Table.ToList());
+            return View(db.Contact_us.ToList());
         }
 
-        // GET: GuestBook/Details/5
+        // GET: Contact_us/Details/5
         public ActionResult Details(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Table table = db.Table.Find(id);
-            if (table == null)
+            Contact_us contact_us = db.Contact_us.Find(id);
+            if (contact_us == null)
             {
                 return HttpNotFound();
             }
-            return View(table);
+            return View(contact_us);
         }
 
-        // GET: GuestBook/Create
+        // GET: Contact_us/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: GuestBook/Create
+        // POST: Contact_us/Create
         // 若要免於過量張貼攻擊，請啟用想要繫結的特定屬性，如需
         // 詳細資訊，請參閱 https://go.microsoft.com/fwlink/?LinkId=317598。
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(Table table)
+        public ActionResult Create(Contact_us contact_us)
         {
             if (ModelState.IsValid)
             {
-                table.Id = Guid.NewGuid();
-                table.PostTime = DateTime.Now;
-                db.Table.Add(table);
+                contact_us.Id = Guid.NewGuid();
+                contact_us.PostTime = DateTime.UtcNow.AddHours(08);
+                db.Contact_us.Add(contact_us);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Create");
             }
 
-            return View(table);
+            return View(contact_us);
         }
 
-        // GET: GuestBook/Edit/5
+        // GET: Contact_us/Edit/5
         public ActionResult Edit(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Table table = db.Table.Find(id);
-            if (table == null)
+            Contact_us contact_us = db.Contact_us.Find(id);
+            if (contact_us == null)
             {
                 return HttpNotFound();
             }
-            return View(table);
+            return View(contact_us);
         }
 
-        // POST: GuestBook/Edit/5
+        // POST: Contact_us/Edit/5
         // 若要免於過量張貼攻擊，請啟用想要繫結的特定屬性，如需
         // 詳細資訊，請參閱 https://go.microsoft.com/fwlink/?LinkId=317598。
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Title,Content,PostTime")] Table table)
+        public ActionResult Edit([Bind(Include = "Id,Name,Email,Phone,UserComments,PostTime")] Contact_us contact_us)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(table).State = EntityState.Modified;
+                db.Entry(contact_us).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(table);
+            return View(contact_us);
         }
 
-        // GET: GuestBook/Delete/5
+        // GET: Contact_us/Delete/5
         public ActionResult Delete(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Table table = db.Table.Find(id);
-            if (table == null)
+            Contact_us contact_us = db.Contact_us.Find(id);
+            if (contact_us == null)
             {
                 return HttpNotFound();
             }
-            return View(table);
+            return View(contact_us);
         }
 
-        // POST: GuestBook/Delete/5
+        // POST: Contact_us/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)
         {
-            Table table = db.Table.Find(id);
-            db.Table.Remove(table);
+            Contact_us contact_us = db.Contact_us.Find(id);
+            db.Contact_us.Remove(contact_us);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

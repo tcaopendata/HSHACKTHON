@@ -19,8 +19,8 @@
     </Key>
     <Property Name="Id" Type="Guid" Nullable="false" />
     <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Phone" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
     <Property Name="UserComments" Type="String" Nullable="false" MaxLength="600" FixedLength="false" Unicode="true" />
     <Property Name="PostTime" Type="DateTime" Nullable="false" Precision="3" />
   </EntityType>

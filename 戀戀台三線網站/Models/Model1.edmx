@@ -11,8 +11,8 @@
           </Key>
           <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Phone" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="20" />
           <Property Name="UserComments" Type="nvarchar" MaxLength="600" Nullable="false" />
           <Property Name="PostTime" Type="datetime" Nullable="false" />
         </EntityType>
@@ -52,8 +52,8 @@
           </Key>
           <Property Name="Id" Type="Guid" Nullable="false" />
           <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Phone" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="UserComments" Type="String" Nullable="false" MaxLength="600" FixedLength="false" Unicode="true" />
           <Property Name="PostTime" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>

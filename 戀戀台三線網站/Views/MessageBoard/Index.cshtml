@@ -51,7 +51,7 @@
         </div>
         <div class="col-sm-2">
            <button class="btn-info" id="Edit-btn">
-               管理修改
+               管理員修改專區
         </button>
     </div>
 </table>
@@ -59,20 +59,20 @@
 <script>
     $('#Edit-btn').click(function () {
         var password = prompt("請輸入密碼", "")
-        if (password == "5681") {
+        if (password != null && password != "") {
             alert('Welcome!')
-            location.href = '/MessageBoard/Jim'
+            location.href = '/MessageBoard/' + password
         }
-        else {
-            if (password == "null") {
-                alert('請再輸入一次密碼');
-                //location.href = 'examples/javascript/16ex2.html';
-            }
-            else
-                if (password != "5681") {
-                    alert('請再輸入一次密碼');
-                    //location.href = 'examples/javascript/16ex2.html';
-                }
-        } 
+        //else {
+        //    if (password == "null") {
+        //        alert('請再輸入一次密碼');
+        //        //location.href = 'examples/javascript/16ex2.html';
+        //    }
+        //    else
+        //        if (password != "password") {
+        //            alert('請再輸入一次密碼');
+        //            //location.href = 'examples/javascript/16ex2.html';
+        //        }
+        //} 
     })
 </script>

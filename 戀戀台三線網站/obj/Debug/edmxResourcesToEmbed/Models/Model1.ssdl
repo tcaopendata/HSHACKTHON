@@ -6,8 +6,8 @@
     </Key>
     <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="Phone" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="20" />
     <Property Name="UserComments" Type="nvarchar" MaxLength="600" Nullable="false" />
     <Property Name="PostTime" Type="datetime" Nullable="false" />
   </EntityType>
