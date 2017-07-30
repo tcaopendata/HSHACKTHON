@@ -17,7 +17,12 @@ namespace 戀戀台三線網站.Controllers
         // GET: MessageBoard
         public ActionResult Index()
         {
-            return View(db.Tables.ToList());
+            var model = from e in db.Tables
+                        orderby e.PostTime descending
+                        select e;
+
+
+            return View(model.ToList());
         }
 
         // GET: MessageBoard/Details/5
@@ -131,7 +136,11 @@ namespace 戀戀台三線網站.Controllers
         //供管理者修改
         public ActionResult Jim()
         {
-            return View(db.Tables.ToList());
+            var model = from e in db.Tables
+                        orderby e.PostTime descending
+                        select e;
+
+            return View(model.ToList());
         }
     }
 }

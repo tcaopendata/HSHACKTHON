@@ -21,6 +21,7 @@ namespace 戀戀台三線網站.Models
         public string Title { get; set; }
 
         [Required]
+        [StringLength(500, MinimumLength = 1)]
         public string Content { get; set; }
 
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy/MM/dd HH:mm}")]
