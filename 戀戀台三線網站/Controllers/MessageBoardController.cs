@@ -17,11 +17,10 @@ namespace 戀戀台三線網站.Controllers
         // GET: MessageBoard
         public ActionResult Index()
         {
-            var model = from e in db.Tables
-                        orderby e.PostTime descending
-                        select e;
-
-
+            //依照發文時間排序，並限制前50則貼文
+            var model = (from e in db.Tables
+                         orderby e.PostTime descending
+                         select e).Take(50);
             return View(model.ToList());
         }
 
@@ -136,7 +135,7 @@ namespace 戀戀台三線網站.Controllers
         //供管理者修改
         public ActionResult Jim()
         {
-            var model = from e in db.Tables
+            var model =from e in db.Tables
                         orderby e.PostTime descending
                         select e;
 
