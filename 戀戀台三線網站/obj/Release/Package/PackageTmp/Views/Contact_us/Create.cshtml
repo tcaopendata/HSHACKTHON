@@ -24,7 +24,7 @@
     <div class="row">
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="col-sm-12">
-            姓名：
+            姓名or綽號：
             @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control UserName" } })
             @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
         </div>
@@ -47,8 +47,8 @@
             </div>
         <div class="col-sm-12">
         @Html.TextAreaFor(model => model.UserComments, new { @cols = "100", rows = "10" })
-        @Html.ValidationMessageFor(model => model.UserComments, "", new { @class = "text-danger Usercomments" })
         </div>
+        @Html.ValidationMessageFor(model => model.UserComments, "", new { @class = "text-danger Usercomments" })
         </div>
 
 
@@ -66,11 +66,3 @@
 @*移動廣告區*@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-    $('#submit').click(function () {
-        if ($('#Name').val() != "" && $('#UserComments').val() != "")
-        {
-            alert('留言成功!')
-        }
-    })
-</script>
