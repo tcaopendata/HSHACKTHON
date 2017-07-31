@@ -397,7 +397,7 @@
 
                 google.maps.event.addListener(marker, 'click', (function (marker, i) {
                     return function () {
-                        var contentstring = '<h2 style="background-color: #ddd; text-align: center;">' + names[i]['stop_name'] + '</h2>' + '<p>' + names[i]['stopinfo'] + '</p>' + ' <img  width="300" height="200" style="text-align: center; margin:auto; display:block;"  src=" ' + names[i]['stopimg'] + '" >';
+                        var contentstring = '<h2 style="background-color: #ddd; text-align: center;">' + names[i]['stop_name'] + '</h2>' + '<h3>' + names[i]['stopinfo'] + '</h3>' + ' <img  width="300" height="200" style="text-align: center; margin:auto; display:block;"  src=" ' + names[i]['stopimg'] + '" >';
 
                         infowindow.setContent(contentstring);
                         infowindow.open(map, marker);

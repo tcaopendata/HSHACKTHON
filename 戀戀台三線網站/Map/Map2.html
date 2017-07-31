@@ -395,7 +395,8 @@
                 });
                 google.maps.event.addListener(marker, 'click', (function (marker, i) {
                     return function () {
-                        infowindow.setContent(names[i]['stop_name']);
+                        var contentstring = '<h2 style="background-color: #ddd; text-align: center;">' + names[i]['stop_name'] + '</h2>' + '<h3>' + names[i]['stopinfo'] + '</h3>' + ' <img  width="300" height="200" style="text-align: center; margin:auto; display:block;"  src=" ' + names[i]['stopimg'] + '" >';
+                        infowindow.setContent(contentstring);
                         infowindow.open(map, marker);
                     }
                 })(marker, i));
@@ -442,11 +443,22 @@
         }//Create mark
 
         function getNames() {
-            var data = [{ "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "0", "stop_name": "新竹高鐵站" }, { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "1", "stop_name": "竹東動漫園區" }, { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "2", "stop_name": "峨眉富興吊橋" }, { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "3", "stop_name": "獅山遊客中心" }, { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "4", "stop_name": "南庄老街" }, { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "5", "stop_name": "\u6587\u6797\u95a3\u7ad9" }, { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "6", "stop_name": "\u7af9\u6771\u904a\u5ba2\u4e2d\u5fc3" }, { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "7", "stop_name": "\u7da0\u4e16\u754c\u751f\u614b\u8fb2\u5834" }, { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "8", "stop_name": "\u5317\u57d4\u8001\u8857" }, { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "9", "stop_name": "\u5ce8\u7709\u7ad9" }, { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "10", "stop_name": "\u7345\u5c71\u904a\u5ba2\u4e2d\u5fc3" }];
+            var data = [
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "0", "stop_name": "新竹高鐵站", "stopinfo": "高鐵新竹站位於新竹縣竹北市，採雙鐵共構營運模式，不但有台鐵可連結至新竹市地區，站外還有10路公車路線服務，可及範圍最遠達關西六福村遊樂園。", "stopimg": "https://p1-news.hfcdn.com/p1-news/MzcwMzUybmV3cw,,/b8c524b8313ec908.jpg"},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "1", "stop_name": "竹東動漫園區", "stopinfo": "竹東動漫園區於2015年年底正式啟用，場內不但定期展示國內知名繪師畫集與新竹縣知名漫畫家劉興欽畫展，供大小朋友共同遊玩與欣賞。", "stopimg": "https://c1.staticflickr.com/6/5735/23815630046_b9a805e7b2_k.jpg"},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "2", "stop_name": "峨眉富興吊橋", "stopinfo": "於民國49年啟用的細茅埔吊橋風景優美，除了可飽覽大埔水庫（峨嵋湖）湖面水波粼粼的好風光外，還可遠眺獅頭山、五指山等山巒景致，美麗又愜意的湖光山色更是許多新人拍攝婚紗的熱門景點。", "stopimg": "https://img.gandan.me/web_upload/GDG_4029.jpg"},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "3", "stop_name": "獅山遊客中心", "stopinfo": "位於台灣苗栗縣、新竹縣三灣鄉、南庄鄉、峨眉鄉交界，峰頂海拔491公尺，為台灣小百岳之一。", "stopimg": "http://farm5.static.flickr.com/4149/5181282042_b049d324af_o.jpg"},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "4", "stop_name": "南庄老街", "stopinfo": "南庄老街位於苗栗縣南庄鄉，街區內散發著濃厚的客家風情，主要景點有永昌宮、老郵局、乃木崎..等。此外在南庄老街擁有夜間導覽的服務，可供遊客體驗不同的南庄風貌。", "stopimg": "http://farm5.static.flickr.com/4149/5181282042_b049d324af_o.jpg"},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "5", "stop_name": "\u6587\u6797\u95a3\u7ad9", "stopinfo": "位於台灣苗栗縣、新竹縣三灣鄉、南庄鄉、峨眉鄉交界，峰頂海拔491公尺，為台灣小百岳之一。", "stopimg": "http://farm9.staticflickr.com/8089/8573921437_7e2ed016ef_b.jpg"},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "6", "stop_name": "\u7af9\u6771\u904a\u5ba2\u4e2d\u5fc3", "stopinfo": "", "stopimg": ""},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "7", "stop_name": "\u7da0\u4e16\u754c\u751f\u614b\u8fb2\u5834", "stopinfo": "", "stopimg": ""},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "8", "stop_name": "\u5317\u57d4\u8001\u8857", "stopinfo": "", "stopimg": ""},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "9", "stop_name": "\u5ce8\u7709\u7ad9", "stopinfo": "", "stopimg": ""},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "10", "stop_name": "\u7345\u5c71\u904a\u5ba2\u4e2d\u5fc3", "stopinfo": "", "stopimg": ""}];
             return data;
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8wUna41vZzKsSkzXun9zfQQMpr7itAWo&amp;signed_in=true&amp;callback=initMap&amp;libraries=drawing" defer="" async=""></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDcvaxzhkn4FgrrD037iTyoO-lLl7HY9o&amp;signed_in=true&amp;callback=initMap&amp;libraries=drawing" defer="" async=""></script>
 
 
 </body>
