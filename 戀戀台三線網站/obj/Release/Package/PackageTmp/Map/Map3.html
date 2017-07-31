@@ -1,124 +1,460 @@
 ﻿<!--樂活南苗栗客家古道鐵馬道一日微旅行-->
-<html><head><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}</style><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}</style>
+<html>
+<head>
+    <style type="text/css">
+        .gm-style .gm-style-mtc label, .gm-style .gm-style-mtc div {
+            font-weight: 400
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .gm-style .gm-style-cc span, .gm-style .gm-style-cc a, .gm-style .gm-style-mtc div {
+            font-size: 10px
+        }
+    </style>
+    <style type="text/css">
+        @media print {
+            .gm-style .gmnoprint, .gmnoprint {
+                display: none
+            }
+        }
+
+        @media screen {
+            .gm-style .gmnoscreen, .gmnoscreen {
+                display: none
+            }
+        }
+    </style>
+    <style type="text/css">
+        .gm-style-pbc {
+            transition: opacity ease-in-out;
+            background-color: rgba(0,0,0,0.45);
+            text-align: center
+        }
+
+        .gm-style-pbt {
+            font-size: 22px;
+            color: white;
+            font-family: Roboto,Arial,sans-serif;
+            position: relative;
+            margin: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%)
+        }
+    </style>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Simple Polylines</title>
     <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #map {
-        height: 100%;
-      }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+        }
     </style>
-  <script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/common.js" type="text/javascript" charset="UTF-8"></script><script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/map.js" type="text/javascript" charset="UTF-8"></script><script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/util.js" type="text/javascript" charset="UTF-8"></script><script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/marker.js" type="text/javascript" charset="UTF-8"></script><script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/geometry.js" type="text/javascript" charset="UTF-8"></script><script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/poly.js" type="text/javascript" charset="UTF-8"></script><style type="text/css">.gm-style {
-        font: 400 11px Roboto, Arial, sans-serif;
-        text-decoration: none;
-      }
-      .gm-style img { max-width: none; }</style><script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/onion.js" type="text/javascript" charset="UTF-8"></script><script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/infowindow.js" type="text/javascript" charset="UTF-8"></script><script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/controls.js" type="text/javascript" charset="UTF-8"></script><script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/stats.js" type="text/javascript" charset="UTF-8"></script></head>
-  <body>
-    <div id="map" style="overflow: hidden; position: relative;"><div style="left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; background-color: rgb(229, 227, 223);"><div class="gm-style" style="border-width: 0px; margin: 0px; padding: 0px; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 0;"><div tabindex="0" style="border-width: 0px; margin: 0px; padding: 0px; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 0; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;"><div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -207, 43); transform-origin: 0px 0px 0px;"><div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 100;"><div style="left: 0px; top: 0px; position: absolute; z-index: 0;"><div aria-hidden="true" style="left: 0px; top: 0px; visibility: inherit; position: absolute; z-index: 1;"><div style="left: 520px; top: 168px; width: 256px; height: 256px; position: absolute;"></div><div style="left: 264px; top: 168px; width: 256px; height: 256px; position: absolute;"></div><div style="left: 520px; top: -88px; width: 256px; height: 256px; position: absolute;"></div><div style="left: 776px; top: 168px; width: 256px; height: 256px; position: absolute;"></div><div style="left: 264px; top: -88px; width: 256px; height: 256px; position: absolute;"></div><div style="left: 776px; top: -88px; width: 256px; height: 256px; position: absolute;"></div><div style="left: 8px; top: 168px; width: 256px; height: 256px; position: absolute;"></div><div style="left: 1032px; top: 168px; width: 256px; height: 256px; position: absolute;"></div><div style="left: 8px; top: -88px; width: 256px; height: 256px; position: absolute;"></div><div style="left: 1032px; top: -88px; width: 256px; height: 256px; position: absolute;"></div><div style="left: 1288px; top: 168px; width: 256px; height: 256px; position: absolute;"></div><div style="left: 1288px; top: -88px; width: 256px; height: 256px; position: absolute;"></div><div style="left: 1544px; top: 168px; width: 256px; height: 256px; position: absolute;"></div><div style="left: 1544px; top: -88px; width: 256px; height: 256px; position: absolute;"></div></div></div></div><div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 101;"><div style="left: 0px; top: 0px; position: absolute; z-index: 30;"><div aria-hidden="true" style="left: 0px; top: 0px; visibility: inherit; position: absolute; z-index: 1;"><div style="left: 264px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 776px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 264px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 776px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 8px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 1032px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 8px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 1032px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 1288px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 1288px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 520px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><canvas width="256" height="256" style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute; -ms-user-select: none;" draggable="false"></canvas></div><div style="left: 520px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><canvas width="256" height="256" style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute; -ms-user-select: none;" draggable="false"></canvas></div><div style="left: 1544px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 1544px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div></div></div></div><div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 102;"></div><div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 103;"><div style="left: 0px; top: 0px; position: absolute; z-index: -1;"><div aria-hidden="true" style="left: 0px; top: 0px; visibility: inherit; position: absolute; z-index: 1;"><div style="left: 520px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><canvas width="256" height="256" style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute; -ms-user-select: none;" draggable="false"></canvas></div><div style="left: 264px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 520px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"><canvas width="256" height="256" style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute; -ms-user-select: none;" draggable="false"></canvas></div><div style="left: 776px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 264px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 776px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 8px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 1032px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 8px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 1032px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 1288px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 1288px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 1544px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div><div style="left: 1544px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div></div></div></div><div style="left: 0px; top: 0px; position: absolute; z-index: 0;"><div aria-hidden="true" style="left: 0px; top: 0px; visibility: inherit; position: absolute; z-index: 1;"><div style="transition:opacity 200ms ease-out; left: 520px; top: 168px; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1712!3i878!4i256!2m3!1e0!2sm!3i386079704!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=51462"></div><div style="transition:opacity 200ms ease-out; left: 264px; top: 168px; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1711!3i878!4i256!2m3!1e0!2sm!3i386079308!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=18424"></div><div style="transition:opacity 200ms ease-out; left: 520px; top: -88px; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1712!3i877!4i256!2m3!1e0!2sm!3i386079704!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=125346"></div><div style="transition:opacity 200ms ease-out; left: 776px; top: 168px; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1713!3i878!4i256!2m3!1e0!2sm!3i386079704!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=56283"></div><div style="transition:opacity 200ms ease-out; left: 264px; top: -88px; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1711!3i877!4i256!2m3!1e0!2sm!3i386078264!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=14911"></div><div style="transition:opacity 200ms ease-out; left: 776px; top: -88px; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1713!3i877!4i256!2m3!1e0!2sm!3i386079704!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=130167"></div><div style="transition:opacity 200ms ease-out; left: 8px; top: 168px; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1710!3i878!4i256!2m3!1e0!2sm!3i386079308!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=13603"></div><div style="transition:opacity 200ms ease-out; left: 1032px; top: 168px; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1714!3i878!4i256!2m3!1e0!2sm!3i386079704!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=61104"></div><div style="transition:opacity 200ms ease-out; left: 8px; top: -88px; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1710!3i877!4i256!2m3!1e0!2sm!3i386077664!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=115285"></div><div style="transition:opacity 200ms ease-out; left: 1032px; top: -88px; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1714!3i877!4i256!2m3!1e0!2sm!3i386079704!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=3917"></div><div style="transition:opacity 200ms ease-out; left: 1288px; top: 168px; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1715!3i878!4i256!2m3!1e0!2sm!3i386079644!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=14361"></div><div style="transition:opacity 200ms ease-out; left: 1288px; top: -88px; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1715!3i877!4i256!2m3!1e0!2sm!3i386079644!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=88245"></div><div style="transition:opacity 200ms ease-out; left: 1544px; top: 168px; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1716!3i878!4i256!2m3!1e0!2sm!3i386079644!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=19182"></div><div style="left: 1544px; top: -88px; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1716!3i877!4i256!2m3!1e0!2sm!3i386079644!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=93066"></div></div></div></div><div class="gm-style-pbc" style="border-width: 0px; margin: 0px; padding: 0px; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 2; opacity: 0; transition-duration: 0s;"><p class="gm-style-pbt"></p></div><div style="border-width: 0px; margin: 0px; padding: 0px; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 3;"><div style="border-width: 0px; margin: 0px; padding: 0px; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 1;"></div></div><div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 4; transform: matrix(1, 0, 0, 1, -207, 43); transform-origin: 0px 0px 0px;"><div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 104;"></div><div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 105;"></div><div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 106;"></div><div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 107;"><div style="display: none; z-index: -202; cursor: pointer;"><div style="width: 30px; height: 27px; overflow: hidden; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: 0px; top: 0px; width: 90px; height: 27px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/undo_poly.png"></div></div></div></div></div><div style="left: 0px; bottom: 0px; margin-right: 5px; margin-left: 5px; position: absolute; z-index: 1000000;"><a title="按一下即可查看「Google 地圖」上的這個區域" style="overflow: visible; display: inline; position: static; float: none;" href="https://maps.google.com/maps?ll=24.877482,121.191852&amp;z=11&amp;t=m&amp;hl=zh-Hant-TW&amp;gl=US&amp;mapclient=apiv3" target="_blank"><div style="width: 66px; height: 26px; cursor: pointer;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: 0px; top: 0px; width: 66px; height: 26px; position: absolute; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"></div></a></div><div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); border-image: none; left: 533px; top: 71px; width: 256px; height: 148px; color: rgb(34, 34, 34); font-family: Roboto,Arial,sans-serif; display: none; position: absolute; z-index: 10000002; box-shadow: 0px 4px 16px rgba(0,0,0,0.2); background-color: white;"><div style="padding: 0px 0px 10px; font-size: 16px;">地圖資料</div><div style="font-size: 13px;">地圖資料 ©2017 Google</div><div style="top: 12px; width: 13px; height: 13px; right: 12px; overflow: hidden; position: absolute; z-index: 10000; cursor: pointer; opacity: 0.7;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -2px; top: -336px; width: 59px; height: 492px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"></div></div><div class="gmnoprint" style="width: 119px; right: 124px; bottom: 0px; position: absolute; z-index: 1000001;"><div class="gm-style-cc" style="height: 14px; line-height: 14px; -ms-user-select: none;" draggable="false"><div style="width: 100%; height: 100%; position: absolute; opacity: 0.7;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="text-align: right; color: rgb(68, 68, 68); padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; vertical-align: middle; display: inline-block; white-space: nowrap; position: relative; direction: ltr;"><a style="color: rgb(68, 68, 68); text-decoration: none; display: none; cursor: pointer;">地圖資料</a><span>地圖資料 ©2017 Google</span></div></div></div><div class="gmnoscreen" style="right: 0px; bottom: 0px; position: absolute;"><div style="text-align: right; color: rgb(68, 68, 68); font-family: Roboto,Arial,sans-serif; font-size: 11px; direction: ltr; background-color: rgb(245, 245, 245);">地圖資料 ©2017 Google</div></div><div class="gmnoprint gm-style-cc" style="height: 14px; right: 72px; bottom: 0px; line-height: 14px; position: absolute; z-index: 1000001; -ms-user-select: none;" draggable="false"><div style="width: 100%; height: 100%; position: absolute; opacity: 0.7;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="text-align: right; color: rgb(68, 68, 68); padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; vertical-align: middle; display: inline-block; white-space: nowrap; position: relative; direction: ltr;"><a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer;" href="https://www.google.com/intl/zh-Hant-TW_US/help/terms_maps.html" target="_blank">使用條款</a></div></div><div style="margin: 10px 14px; top: 0px; width: 25px; height: 25px; right: 0px; overflow: hidden; display: none; position: absolute; cursor: pointer;"><img class="gm-fullscreen-control" style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -52px; top: -86px; width: 164px; height: 175px; position: absolute; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/sv9.png"></div><div class="gm-style-cc" style="height: 14px; right: 0px; bottom: 0px; line-height: 14px; position: absolute; -ms-user-select: none;" draggable="false"><div style="width: 100%; height: 100%; position: absolute; opacity: 0.7;"><div style="width: 1px;"></div><div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div></div><div style="text-align: right; color: rgb(68, 68, 68); padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; vertical-align: middle; display: inline-block; white-space: nowrap; position: relative; direction: ltr;"><a title="向 Google 回報道路地圖或圖像錯誤" style="color: rgb(68, 68, 68); font-family: Roboto,Arial,sans-serif; font-size: 10px; text-decoration: none; position: relative;" href="https://www.google.com/maps/@24.8774822,121.1918521,11z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" target="_new">回報地圖錯誤</a></div></div><div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" style="margin: 10px; right: 28px; bottom: 107px; position: absolute; -ms-user-select: none;" draggable="false" controlWidth="28" controlHeight="93"><div class="gmnoprint" style="left: 0px; top: 38px; position: absolute;" controlWidth="28" controlHeight="55"><div style="border-radius: 2px; width: 28px; height: 55px; cursor: pointer; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); -ms-user-select: none; background-color: rgb(255, 255, 255);" draggable="false"><div tabindex="0" title="放大" style="left: 0px; top: 0px; width: 28px; height: 27px; position: relative;" aria-label="放大"><div style="left: 7px; top: 6px; width: 15px; height: 15px; overflow: hidden; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: 0px; top: 0px; width: 120px; height: 54px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png"></div></div><div style="left: 16%; top: 0px; width: 67%; height: 1px; overflow: hidden; position: relative; background-color: rgb(230, 230, 230);"></div><div tabindex="0" title="縮小" style="left: 0px; top: 0px; width: 28px; height: 27px; position: relative;" aria-label="縮小"><div style="left: 7px; top: 6px; width: 15px; height: 15px; overflow: hidden; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: 0px; top: -15px; width: 120px; height: 54px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png"></div></div></div></div><div class="gm-svpc" style="border-radius: 2px; left: 0px; top: 0px; width: 28px; height: 28px; position: absolute; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-color: rgb(255, 255, 255);" controlWidth="28" controlHeight="28"><div style="left: 1px; top: 1px; position: absolute;"></div><div style="left: 1px; top: 1px; position: absolute;"><div style="left: 0px; top: 0px; width: 26px; height: 26px; overflow: hidden; position: absolute;" aria-label="街景服務衣夾人控制項"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -147px; top: -26px; width: 215px; height: 835px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png"></div><div style="left: 0px; top: 0px; width: 26px; height: 26px; overflow: hidden; visibility: hidden; position: absolute;" aria-label="衣夾人位在地圖上方"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -147px; top: -52px; width: 215px; height: 835px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png"></div><div style="left: 0px; top: 0px; width: 26px; height: 26px; overflow: hidden; visibility: hidden; position: absolute;" aria-label="街景服務衣夾人控制項"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -147px; top: -78px; width: 215px; height: 835px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png"></div></div></div><div class="gmnoprint" style="display: none; position: absolute;" controlWidth="28" controlHeight="0"><div title="將地圖旋轉 90 度" style="border-radius: 2px; width: 28px; height: 28px; overflow: hidden; display: none; position: absolute; cursor: pointer; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-color: rgb(255, 255, 255);"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -141px; top: 6px; width: 170px; height: 54px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png"></div><div class="gm-tilt" style="border-radius: 2px; top: 0px; width: 28px; height: 28px; overflow: hidden; position: absolute; cursor: pointer; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-color: rgb(255, 255, 255);"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -141px; top: -13px; width: 170px; height: 54px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png"></div></div></div><div class="gmnoprint" style="margin: 10px; left: 0px; top: 0px; position: absolute; z-index: 0; cursor: pointer;"><div class="gm-style-mtc" style="float: left;"><div title="顯示街道地圖" style="padding: 8px; text-align: center; color: rgb(0, 0, 0); overflow: hidden; font-family: Roboto,Arial,sans-serif; font-size: 11px; font-weight: 500; position: relative; direction: ltr; min-width: 22px; border-top-left-radius: 2px; border-bottom-left-radius: 2px; background-clip: padding-box; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); -ms-user-select: none; background-color: rgb(255, 255, 255);" draggable="false">地圖</div><div style="padding: 2px; left: 0px; top: 31px; text-align: left; display: none; position: absolute; z-index: -1; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-color: white;"><div title="顯示包含地形的街道地圖" style="padding: 6px 8px 6px 6px; text-align: left; color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; font-size: 11px; white-space: nowrap; direction: ltr; -ms-user-select: none; background-color: rgb(255, 255, 255);" draggable="false"><span role="checkbox" style="margin: 0px 5px 0px 0px; border-radius: 1px; border: 1px solid rgb(198, 198, 198); border-image: none; width: 13px; height: 13px; line-height: 0; font-size: 0px; vertical-align: middle; display: inline-block; position: relative; box-sizing: border-box; background-color: rgb(255, 255, 255);"><div style="left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -52px; top: -44px; width: 68px; height: 67px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png"></div></span><label style="vertical-align: middle; cursor: pointer;">地形圖</label></div></div></div><div class="gm-style-mtc" style="float: left;"><div title="顯示衛星圖" style="padding: 8px; text-align: center; color: rgb(86, 86, 86); overflow: hidden; font-family: Roboto,Arial,sans-serif; font-size: 11px; border-left-color: currentColor; border-left-width: 0px; border-left-style: none; position: relative; direction: ltr; min-width: 44px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; background-clip: padding-box; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); -ms-user-select: none; background-color: rgb(255, 255, 255);" draggable="false">衛星檢視</div><div style="padding: 2px; top: 31px; text-align: left; right: 0px; display: none; position: absolute; z-index: -1; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-color: white;"><div title="顯示包含街道名稱的圖像" style="padding: 6px 8px 6px 6px; text-align: left; color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; font-size: 11px; white-space: nowrap; direction: ltr; -ms-user-select: none; background-color: rgb(255, 255, 255);" draggable="false"><span role="checkbox" style="margin: 0px 5px 0px 0px; border-radius: 1px; border: 1px solid rgb(198, 198, 198); border-image: none; width: 13px; height: 13px; line-height: 0; font-size: 0px; vertical-align: middle; display: inline-block; position: relative; box-sizing: border-box; background-color: rgb(255, 255, 255);"><div style="left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; position: absolute;"><img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -52px; top: -44px; width: 68px; height: 67px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png"></div></span><label style="vertical-align: middle; cursor: pointer;">地名</label></div></div></div></div></div></div></div>
+    <script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/common.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/map.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/util.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/marker.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/geometry.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/poly.js" type="text/javascript" charset="UTF-8"></script>
+    <style type="text/css">
+        .gm-style {
+            font: 400 11px Roboto, Arial, sans-serif;
+            text-decoration: none;
+        }
+
+            .gm-style img {
+                max-width: none;
+            }
+    </style>
+    <script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/onion.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/infowindow.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/controls.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="https://maps.googleapis.com/maps-api-v3/api/js/29/13/intl/zh_tw/stats.js" type="text/javascript" charset="UTF-8"></script>
+</head>
+<body>
+    <div id="map" style="overflow: hidden; position: relative;">
+        <div style="left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; background-color: rgb(229, 227, 223);">
+            <div class="gm-style" style="border-width: 0px; margin: 0px; padding: 0px; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 0;">
+                <div tabindex="0" style="border-width: 0px; margin: 0px; padding: 0px; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 0; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default;">
+                    <div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -207, 43); transform-origin: 0px 0px 0px;">
+                        <div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 100;">
+                            <div style="left: 0px; top: 0px; position: absolute; z-index: 0;">
+                                <div aria-hidden="true" style="left: 0px; top: 0px; visibility: inherit; position: absolute; z-index: 1;">
+                                    <div style="left: 520px; top: 168px; width: 256px; height: 256px; position: absolute;"></div>
+                                    <div style="left: 264px; top: 168px; width: 256px; height: 256px; position: absolute;"></div>
+                                    <div style="left: 520px; top: -88px; width: 256px; height: 256px; position: absolute;"></div>
+                                    <div style="left: 776px; top: 168px; width: 256px; height: 256px; position: absolute;"></div>
+                                    <div style="left: 264px; top: -88px; width: 256px; height: 256px; position: absolute;"></div>
+                                    <div style="left: 776px; top: -88px; width: 256px; height: 256px; position: absolute;"></div>
+                                    <div style="left: 8px; top: 168px; width: 256px; height: 256px; position: absolute;"></div>
+                                    <div style="left: 1032px; top: 168px; width: 256px; height: 256px; position: absolute;"></div>
+                                    <div style="left: 8px; top: -88px; width: 256px; height: 256px; position: absolute;"></div>
+                                    <div style="left: 1032px; top: -88px; width: 256px; height: 256px; position: absolute;"></div>
+                                    <div style="left: 1288px; top: 168px; width: 256px; height: 256px; position: absolute;"></div>
+                                    <div style="left: 1288px; top: -88px; width: 256px; height: 256px; position: absolute;"></div>
+                                    <div style="left: 1544px; top: 168px; width: 256px; height: 256px; position: absolute;"></div>
+                                    <div style="left: 1544px; top: -88px; width: 256px; height: 256px; position: absolute;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 101;">
+                            <div style="left: 0px; top: 0px; position: absolute; z-index: 30;">
+                                <div aria-hidden="true" style="left: 0px; top: 0px; visibility: inherit; position: absolute; z-index: 1;">
+                                    <div style="left: 264px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 776px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 264px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 776px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 8px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 1032px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 8px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 1032px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 1288px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 1288px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 520px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;">
+                                        <canvas width="256" height="256" style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute; -ms-user-select: none;" draggable="false"></canvas>
+                                    </div>
+                                    <div style="left: 520px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;">
+                                        <canvas width="256" height="256" style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute; -ms-user-select: none;" draggable="false"></canvas>
+                                    </div>
+                                    <div style="left: 1544px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 1544px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 102;"></div>
+                        <div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 103;">
+                            <div style="left: 0px; top: 0px; position: absolute; z-index: -1;">
+                                <div aria-hidden="true" style="left: 0px; top: 0px; visibility: inherit; position: absolute; z-index: 1;">
+                                    <div style="left: 520px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;">
+                                        <canvas width="256" height="256" style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute; -ms-user-select: none;" draggable="false"></canvas>
+                                    </div>
+                                    <div style="left: 264px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 520px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;">
+                                        <canvas width="256" height="256" style="left: 0px; top: 0px; width: 256px; height: 256px; position: absolute; -ms-user-select: none;" draggable="false"></canvas>
+                                    </div>
+                                    <div style="left: 776px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 264px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 776px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 8px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 1032px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 8px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 1032px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 1288px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 1288px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 1544px; top: 168px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                    <div style="left: 1544px; top: -88px; width: 256px; height: 256px; overflow: hidden; position: absolute;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="left: 0px; top: 0px; position: absolute; z-index: 0;">
+                            <div aria-hidden="true" style="left: 0px; top: 0px; visibility: inherit; position: absolute; z-index: 1;">
+                                <div style="transition:opacity 200ms ease-out; left: 520px; top: 168px; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1712!3i878!4i256!2m3!1e0!2sm!3i386079704!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=51462">
+                                </div>
+                                <div style="transition:opacity 200ms ease-out; left: 264px; top: 168px; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1711!3i878!4i256!2m3!1e0!2sm!3i386079308!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=18424">
+                                </div>
+                                <div style="transition:opacity 200ms ease-out; left: 520px; top: -88px; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1712!3i877!4i256!2m3!1e0!2sm!3i386079704!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=125346">
+                                </div>
+                                <div style="transition:opacity 200ms ease-out; left: 776px; top: 168px; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1713!3i878!4i256!2m3!1e0!2sm!3i386079704!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=56283">
+                                </div>
+                                <div style="transition:opacity 200ms ease-out; left: 264px; top: -88px; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1711!3i877!4i256!2m3!1e0!2sm!3i386078264!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=14911">
+                                </div>
+                                <div style="transition:opacity 200ms ease-out; left: 776px; top: -88px; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1713!3i877!4i256!2m3!1e0!2sm!3i386079704!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=130167">
+                                </div>
+                                <div style="transition:opacity 200ms ease-out; left: 8px; top: 168px; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1710!3i878!4i256!2m3!1e0!2sm!3i386079308!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=13603">
+                                </div>
+                                <div style="transition:opacity 200ms ease-out; left: 1032px; top: 168px; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1714!3i878!4i256!2m3!1e0!2sm!3i386079704!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=61104">
+                                </div>
+                                <div style="transition:opacity 200ms ease-out; left: 8px; top: -88px; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1710!3i877!4i256!2m3!1e0!2sm!3i386077664!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=115285">
+                                </div>
+                                <div style="transition:opacity 200ms ease-out; left: 1032px; top: -88px; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1714!3i877!4i256!2m3!1e0!2sm!3i386079704!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=3917">
+                                </div>
+                                <div style="transition:opacity 200ms ease-out; left: 1288px; top: 168px; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1715!3i878!4i256!2m3!1e0!2sm!3i386079644!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=14361">
+                                </div>
+                                <div style="transition:opacity 200ms ease-out; left: 1288px; top: -88px; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1715!3i877!4i256!2m3!1e0!2sm!3i386079644!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=88245">
+                                </div>
+                                <div style="transition:opacity 200ms ease-out; left: 1544px; top: 168px; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1716!3i878!4i256!2m3!1e0!2sm!3i386079644!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=19182">
+                                </div>
+                                <div style="left: 1544px; top: -88px; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; width: 256px; height: 256px; max-width: none; -ms-user-select: none;" draggable="false" alt="" src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i11!2i1716!3i877!4i256!2m3!1e0!2sm!3i386079644!3m9!2szh-Hant-TW!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0&amp;token=93066">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gm-style-pbc" style="border-width: 0px; margin: 0px; padding: 0px; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 2; opacity: 0; transition-duration: 0s;">
+                        <p class="gm-style-pbt"></p>
+                    </div>
+                    <div style="border-width: 0px; margin: 0px; padding: 0px; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 3;">
+                        <div style="border-width: 0px; margin: 0px; padding: 0px; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 1;"></div>
+                    </div>
+                    <div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 4; transform: matrix(1, 0, 0, 1, -207, 43); transform-origin: 0px 0px 0px;">
+                        <div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 104;"></div>
+                        <div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 105;"></div>
+                        <div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 106;"></div>
+                        <div style="left: 0px; top: 0px; width: 100%; position: absolute; z-index: 107;">
+                            <div style="display: none; z-index: -202; cursor: pointer;">
+                                <div style="width: 30px; height: 27px; overflow: hidden; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: 0px; top: 0px; width: 90px; height: 27px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/undo_poly.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="left: 0px; bottom: 0px; margin-right: 5px; margin-left: 5px; position: absolute; z-index: 1000000;">
+                    <a title="按一下即可查看「Google 地圖」上的這個區域" style="overflow: visible; display: inline; position: static; float: none;" href="https://maps.google.com/maps?ll=24.877482,121.191852&amp;z=11&amp;t=m&amp;hl=zh-Hant-TW&amp;gl=US&amp;mapclient=apiv3" target="_blank">
+                        <div style="width: 66px; height: 26px; cursor: pointer;">
+                            <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: 0px; top: 0px; width: 66px; height: 26px; position: absolute; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png">
+                        </div>
+                    </a>
+                </div>
+                <div style="padding: 15px 21px; border: 1px solid rgb(171, 171, 171); border-image: none; left: 533px; top: 71px; width: 256px; height: 148px; color: rgb(34, 34, 34); font-family: Roboto,Arial,sans-serif; display: none; position: absolute; z-index: 10000002; box-shadow: 0px 4px 16px rgba(0,0,0,0.2); background-color: white;">
+                    <div style="padding: 0px 0px 10px; font-size: 16px;">地圖資料</div>
+                    <div style="font-size: 13px;">地圖資料 ©2017 Google</div>
+                    <div style="top: 12px; width: 13px; height: 13px; right: 12px; overflow: hidden; position: absolute; z-index: 10000; cursor: pointer; opacity: 0.7;">
+                        <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -2px; top: -336px; width: 59px; height: 492px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png">
+                    </div>
+                </div>
+                <div class="gmnoprint" style="width: 119px; right: 124px; bottom: 0px; position: absolute; z-index: 1000001;">
+                    <div class="gm-style-cc" style="height: 14px; line-height: 14px; -ms-user-select: none;" draggable="false">
+                        <div style="width: 100%; height: 100%; position: absolute; opacity: 0.7;">
+                            <div style="width: 1px;"></div>
+                            <div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div>
+                        </div>
+                        <div style="text-align: right; color: rgb(68, 68, 68); padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; vertical-align: middle; display: inline-block; white-space: nowrap; position: relative; direction: ltr;">
+                            <a style="color: rgb(68, 68, 68); text-decoration: none; display: none; cursor: pointer;">地圖資料</a>
+                            <span>地圖資料 ©2017 Google</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gmnoscreen" style="right: 0px; bottom: 0px; position: absolute;">
+                    <div style="text-align: right; color: rgb(68, 68, 68); font-family: Roboto,Arial,sans-serif; font-size: 11px; direction: ltr; background-color: rgb(245, 245, 245);">地圖資料 ©2017 Google</div>
+                </div>
+                <div class="gmnoprint gm-style-cc" style="height: 14px; right: 72px; bottom: 0px; line-height: 14px; position: absolute; z-index: 1000001; -ms-user-select: none;" draggable="false">
+                    <div style="width: 100%; height: 100%; position: absolute; opacity: 0.7;">
+                        <div style="width: 1px;"></div>
+                        <div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div>
+                    </div>
+                    <div style="text-align: right; color: rgb(68, 68, 68); padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; vertical-align: middle; display: inline-block; white-space: nowrap; position: relative; direction: ltr;">
+                        <a style="color: rgb(68, 68, 68); text-decoration: none; cursor: pointer;" href="https://www.google.com/intl/zh-Hant-TW_US/help/terms_maps.html" target="_blank">使用條款</a>
+                    </div>
+                </div>
+                <div style="margin: 10px 14px; top: 0px; width: 25px; height: 25px; right: 0px; overflow: hidden; display: none; position: absolute; cursor: pointer;">
+                    <img class="gm-fullscreen-control" style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -52px; top: -86px; width: 164px; height: 175px; position: absolute; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/sv9.png">
+                </div>
+                <div class="gm-style-cc" style="height: 14px; right: 0px; bottom: 0px; line-height: 14px; position: absolute; -ms-user-select: none;" draggable="false">
+                    <div style="width: 100%; height: 100%; position: absolute; opacity: 0.7;">
+                        <div style="width: 1px;"></div>
+                        <div style="width: auto; height: 100%; margin-left: 1px; background-color: rgb(245, 245, 245);"></div>
+                    </div>
+                    <div style="text-align: right; color: rgb(68, 68, 68); padding-right: 6px; padding-left: 6px; font-family: Roboto,Arial,sans-serif; font-size: 10px; vertical-align: middle; display: inline-block; white-space: nowrap; position: relative; direction: ltr;">
+                        <a title="向 Google 回報道路地圖或圖像錯誤" style="color: rgb(68, 68, 68); font-family: Roboto,Arial,sans-serif; font-size: 10px; text-decoration: none; position: relative;" href="https://www.google.com/maps/@24.8774822,121.1918521,11z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3" target="_new">回報地圖錯誤</a>
+                    </div>
+                </div>
+                <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" style="margin: 10px; right: 28px; bottom: 107px; position: absolute; -ms-user-select: none;" draggable="false" controlWidth="28" controlHeight="93">
+                    <div class="gmnoprint" style="left: 0px; top: 38px; position: absolute;" controlWidth="28" controlHeight="55">
+                        <div style="border-radius: 2px; width: 28px; height: 55px; cursor: pointer; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); -ms-user-select: none; background-color: rgb(255, 255, 255);" draggable="false">
+                            <div tabindex="0" title="放大" style="left: 0px; top: 0px; width: 28px; height: 27px; position: relative;" aria-label="放大">
+                                <div style="left: 7px; top: 6px; width: 15px; height: 15px; overflow: hidden; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: 0px; top: 0px; width: 120px; height: 54px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png">
+                                </div>
+                            </div>
+                            <div style="left: 16%; top: 0px; width: 67%; height: 1px; overflow: hidden; position: relative; background-color: rgb(230, 230, 230);"></div>
+                            <div tabindex="0" title="縮小" style="left: 0px; top: 0px; width: 28px; height: 27px; position: relative;" aria-label="縮小">
+                                <div style="left: 7px; top: 6px; width: 15px; height: 15px; overflow: hidden; position: absolute;">
+                                    <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: 0px; top: -15px; width: 120px; height: 54px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gm-svpc" style="border-radius: 2px; left: 0px; top: 0px; width: 28px; height: 28px; position: absolute; cursor: url(https://maps.gstatic.com/mapfiles/openhand_8_8.cur), default; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-color: rgb(255, 255, 255);" controlWidth="28" controlHeight="28">
+                        <div style="left: 1px; top: 1px; position: absolute;"></div>
+                        <div style="left: 1px; top: 1px; position: absolute;">
+                            <div style="left: 0px; top: 0px; width: 26px; height: 26px; overflow: hidden; position: absolute;" aria-label="街景服務衣夾人控制項">
+                                <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -147px; top: -26px; width: 215px; height: 835px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png">
+                            </div>
+                            <div style="left: 0px; top: 0px; width: 26px; height: 26px; overflow: hidden; visibility: hidden; position: absolute;" aria-label="衣夾人位在地圖上方">
+                                <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -147px; top: -52px; width: 215px; height: 835px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png">
+                            </div>
+                            <div style="left: 0px; top: 0px; width: 26px; height: 26px; overflow: hidden; visibility: hidden; position: absolute;" aria-label="街景服務衣夾人控制項">
+                                <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -147px; top: -78px; width: 215px; height: 835px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/cb_scout5.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gmnoprint" style="display: none; position: absolute;" controlWidth="28" controlHeight="0">
+                        <div title="將地圖旋轉 90 度" style="border-radius: 2px; width: 28px; height: 28px; overflow: hidden; display: none; position: absolute; cursor: pointer; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-color: rgb(255, 255, 255);">
+                            <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -141px; top: 6px; width: 170px; height: 54px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png">
+                        </div>
+                        <div class="gm-tilt" style="border-radius: 2px; top: 0px; width: 28px; height: 28px; overflow: hidden; position: absolute; cursor: pointer; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-color: rgb(255, 255, 255);">
+                            <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -141px; top: -13px; width: 170px; height: 54px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="gmnoprint" style="margin: 10px; left: 0px; top: 0px; position: absolute; z-index: 0; cursor: pointer;">
+                    <div class="gm-style-mtc" style="float: left;">
+                        <div title="顯示街道地圖" style="padding: 8px; text-align: center; color: rgb(0, 0, 0); overflow: hidden; font-family: Roboto,Arial,sans-serif; font-size: 11px; font-weight: 500; position: relative; direction: ltr; min-width: 22px; border-top-left-radius: 2px; border-bottom-left-radius: 2px; background-clip: padding-box; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); -ms-user-select: none; background-color: rgb(255, 255, 255);" draggable="false">地圖</div>
+                        <div style="padding: 2px; left: 0px; top: 31px; text-align: left; display: none; position: absolute; z-index: -1; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-color: white;">
+                            <div title="顯示包含地形的街道地圖" style="padding: 6px 8px 6px 6px; text-align: left; color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; font-size: 11px; white-space: nowrap; direction: ltr; -ms-user-select: none; background-color: rgb(255, 255, 255);" draggable="false">
+                                <span role="checkbox" style="margin: 0px 5px 0px 0px; border-radius: 1px; border: 1px solid rgb(198, 198, 198); border-image: none; width: 13px; height: 13px; line-height: 0; font-size: 0px; vertical-align: middle; display: inline-block; position: relative; box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                                    <div style="left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none; position: absolute;">
+                                        <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -52px; top: -44px; width: 68px; height: 67px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png">
+                                    </div>
+                                </span>
+                                <label style="vertical-align: middle; cursor: pointer;">地形圖</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gm-style-mtc" style="float: left;">
+                        <div title="顯示衛星圖" style="padding: 8px; text-align: center; color: rgb(86, 86, 86); overflow: hidden; font-family: Roboto,Arial,sans-serif; font-size: 11px; border-left-color: currentColor; border-left-width: 0px; border-left-style: none; position: relative; direction: ltr; min-width: 44px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; background-clip: padding-box; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); -ms-user-select: none; background-color: rgb(255, 255, 255);" draggable="false">衛星檢視</div>
+                        <div style="padding: 2px; top: 31px; text-align: left; right: 0px; display: none; position: absolute; z-index: -1; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; box-shadow: 0px 1px 4px -1px rgba(0,0,0,0.3); background-color: white;">
+                            <div title="顯示包含街道名稱的圖像" style="padding: 6px 8px 6px 6px; text-align: left; color: rgb(0, 0, 0); font-family: Roboto,Arial,sans-serif; font-size: 11px; white-space: nowrap; direction: ltr; -ms-user-select: none; background-color: rgb(255, 255, 255);" draggable="false">
+                                <span role="checkbox" style="margin: 0px 5px 0px 0px; border-radius: 1px; border: 1px solid rgb(198, 198, 198); border-image: none; width: 13px; height: 13px; line-height: 0; font-size: 0px; vertical-align: middle; display: inline-block; position: relative; box-sizing: border-box; background-color: rgb(255, 255, 255);">
+                                    <div style="left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; position: absolute;">
+                                        <img style="margin: 0px; padding: 0px; border: 0px; border-image: none; left: -52px; top: -44px; width: 68px; height: 67px; position: absolute; max-width: none; -ms-user-select: none;" draggable="false" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png">
+                                    </div>
+                                </span>
+                                <label style="vertical-align: middle; cursor: pointer;">地名</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
 
-// This example creates a 2-pixel-wide red polyline showing the path of William
-// Kingsford Smith's first trans-Pacific flight between Oakland, CA, and
-// Brisbane, Australia.
+        // This example creates a 2-pixel-wide red polyline showing the path of William
+        // Kingsford Smith's first trans-Pacific flight between Oakland, CA, and
+        // Brisbane, Australia.
 
 
-function initMap() {
-	var map = new google.maps.Map(document.getElementById('map'), {
-			// zoom: 11,
-			// center: {lat: 25, lng: 121},
-	mapTypeId: google.maps.MapTypeId.ROADMAP
-	});
-	var bounds = new google.maps.LatLngBounds();
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                // zoom: 11,
+                // center: {lat: 25, lng: 121},
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+            var bounds = new google.maps.LatLngBounds();
 
-	// var flightPlanCoordinates = [
-	//   {lat: 37.772, lng: -122.214},
-	//   {lat: 21.291, lng: -157.821},
-	//   {lat: -18.142, lng: 178.431},
-	//   {lat: -27.467, lng: 153.027}
-	// ];
-	var flightPlanCoordinates = new Array();
-
-
-	var latlng = getCoords();
-	for (index = 0; index < latlng.length; index++) {
-		console.log(latlng[index]);
-		if(latlng[index]) {
-			var coord = latlng[index].split(",");
-			var lat = parseFloat(coord[0]);
-			var lng = parseFloat(coord[1]);
-			var c = new google.maps.LatLng(lat, lng);
-			bounds.extend(c);
-			flightPlanCoordinates.push(c);
-		}
-		//flightPlanCoordinates.push(beachMarker.getPosition());
-	}
-
-	var stops = getStops();
-	var names = getNames();
-	var marker, i;
-	var infowindow = new google.maps.InfoWindow(); 
-	var bounds = new google.maps.LatLngBounds();
-	for (i = 0; i < stops.length; i++) {
-		var coord = stops[i].split(",");
-		var lat = parseFloat(coord[0]);
-		var lng = parseFloat(coord[1]);
-		var pos = new google.maps.LatLng(lat, lng);
-		bounds.extend(pos);
-		marker = new google.maps.Marker({
-		    position: pos,
-		    map: map
-		});
-		google.maps.event.addListener(marker, 'click', (function(marker, i) {
-		    return function() {
-			    infowindow.setContent(names[i]['stop_name']);
-			    infowindow.open(map, marker);
-		    }
-	       })(marker, i));
-	}
-	
-// var d = new google.maps.LatLng(23.23, 121.24);
-// // flightPlanCoordinates.push(c);
-	//flightPlanCoordinates.push(d);
-	//flightPlanCoordinates.pop();
-	//console.log(flightPlanCoordinates);
-	var flightPath = new google.maps.Polyline({
-		path: flightPlanCoordinates,
-		geodesic: true,
-		strokeColor: '#006000',
-		strokeOpacity: 1.0,
-		strokeWeight: 5
-	});
-	map.fitBounds(bounds);
-	flightPath.setMap(map);
-	
-}
+            // var flightPlanCoordinates = [
+            //   {lat: 37.772, lng: -122.214},
+            //   {lat: 21.291, lng: -157.821},
+            //   {lat: -18.142, lng: 178.431},
+            //   {lat: -27.467, lng: 153.027}
+            // ];
+            var flightPlanCoordinates = new Array();
 
 
-function getCoords() {
-    var data = ["24.254129, 120.722952", "24.255806, 120.723853", "24.254960, 120.725356", "24.256930, 120.728842", "24.256930, 120.728995", "24.265617, 120.746351", "24.273755, 120.754065", "24.276771, 120.759459", "24.277193, 120.764224", "24.276258, 120.766573", "24.274026, 120.778785", "24.274509, 120.784509", "24.273795, 120.789241",
-        "24.272428, 120.789002", "24.273754, 120.789551", "24.274687, 120.783975", "24.274826, 120.782458", "24.275019, 120.780493", "24.275510, 120.779666", "24.276199, 120.779902", "24.277021, 120.778227", "24.277021, 120.778227 ", "24.278306, 120.777615", "24.285829, 120.780621", "24.286166, 120.781649", "24.286158, 120.786115", "24.285335, 120.788742", "24.285467, 120.792577", "24.286133, 120.795653", "24.290006, 120.796673", "24.291552, 120.800011", "24.293049, 120.801156", "24.294940, 120.800868", "24.298295, 120.802681", "24.300326, 120.802203", "24.303039, 120.800353", "24.303812, 120.800850", "24.303968, 120.801508", "24.303360, 120.803400", "24.303422, 120.805092", "24.303712, 120.805993", "24.303338, 120.810408", "24.303822, 120.811660", "24.310392, 120.821506", "24.315702, 120.823798", "24.322544, 120.823799", "24.323914, 120.824049", "24.325853, 120.823270", "24.328123, 120.820877", "24.328617, 120.820821", "24.327768, 120.822129", "24.328693, 120.822143", "24.328085, 120.822672", "24.327311, 120.824230", "24.328579, 120.823298", "24.327628, 120.825232", "24.328541, 120.824661", "24.328820, 120.823673", "24.329314, 120.823771", "24.328909, 120.825023", "24.332748, 120.826213",
-        "24.335431, 120.814620", "24.333339, 120.814289", "24.332967, 120.813727", "24.333478, 120.813855", "24.333641, 120.813166", "24.334338, 120.812273", "24.335617, 120.809364", "24.335385, 120.808547", "24.334780, 120.807603", "24.334710, 120.806863", "24.334106, 120.806378", "24.334059, 120.805664", "24.336942, 120.803444", "24.336408, 120.800841", "24.336245, 120.798800", "24.335594, 120.797830", "24.334594, 120.789103", "24.333990, 120.788618", "24.333362, 120.786908", "24.332153, 120.784892", "24.332432, 120.783361", "24.332455, 120.782341", "24.331711, 120.781524", "24.332083, 120.780529", "24.333246, 120.780988", "24.333455, 120.781728", "24.333060, 120.782851", "24.333804, 120.783157", "24.336826, 120.780963", "24.338756, 120.781703", "24.338919, 120.780478", "24.339267, 120.779432", "24.337942, 120.778462", "24.336896, 120.778232", "24.336268, 120.778794", "24.335733, 120.779202", "24.335034, 120.778985", "24.334785, 120.775101", "24.336002, 120.774160", "24.336638, 120.773432", "24.336445, 120.773386",
-        "24.337578, 120.773714", "24.338717, 120.773389", "24.339119, 120.772938", "24.340583, 120.772685", "24.341799, 120.771639", "24.341898, 120.771215", "24.341528, 120.770267", "24.341717, 120.768806", "24.341199, 120.767362", "24.340911, 120.766622", "24.341264, 120.764317", "24.344042, 120.761845", "24.346574, 120.761168", "24.349183, 120.757589", "24.351738, 120.751679", "24.351508, 120.745138", "24.352091, 120.740149", "24.355447, 120.735923", "24.355126, 120.735607", "24.352957, 120.735111", "24.326140, 120.728436", "24.325754, 120.728157", "24.325343, 120.726668", "24.326066, 120.724376", "24.326025, 120.723916", "24.325137, 120.723384", "24.323559, 120.723637", "24.321249, 120.725152", "24.320976, 120.727277", "24.318762, 120.736120", "24.318540, 120.736616", "24.315942, 120.739485", "24.315325, 120.740071", "24.314593, 120.740171", "24.314026, 120.739972", "24.313467, 120.739440", "24.312834, 120.737915", "24.312291, 120.737248", "24.309364, 120.736290", "24.307271, 120.735119", "24.304352, 120.735009", "24.303004, 120.733595", "24.301393, 120.735252", "24.300085, 120.735804", "24.299099, 120.735627",
-        "24.298558, 120.735516", "24.298542, 120.732069", "24.290236, 120.732385", "24.288050, 120.730496", "24.287887, 120.722969", "24.277779, 120.722126", "24.275090, 120.731199", "24.269414, 120.747332", "24.268407, 120.749359", "24.266695, 120.747643", "24.267468, 120.747514", "24.268387, 120.747600", "24.269649, 120.747310", "24.271694, 120.740381","24.271701, 120.740350"];
-	return data;
-}
+            var latlng = getCoords();
+            for (index = 0; index < latlng.length; index++) {
+                console.log(latlng[index]);
+                if (latlng[index]) {
+                    var coord = latlng[index].split(",");
+                    var lat = parseFloat(coord[0]);
+                    var lng = parseFloat(coord[1]);
+                    var c = new google.maps.LatLng(lat, lng);
+                    bounds.extend(c);
+                    flightPlanCoordinates.push(c);
+                }
+                //flightPlanCoordinates.push(beachMarker.getPosition());
+            }
 
-function getStops() {
-    var data = ["24.254129, 120.722952", "24.272428, 120.789002", "24.332748, 120.826213", "24.336445, 120.773386", "24.298864, 120.735569", "24.271701, 120.740350"];
-	return data;
-}//Create mark
+            var stops = getStops();
+            var names = getNames();
+            var marker, i;
+            var infowindow = new google.maps.InfoWindow();
+            var bounds = new google.maps.LatLngBounds();
+            for (i = 0; i < stops.length; i++) {
+                var coord = stops[i].split(",");
+                var lat = parseFloat(coord[0]);
+                var lng = parseFloat(coord[1]);
+                var pos = new google.maps.LatLng(lat, lng);
+                bounds.extend(pos);
+                marker = new google.maps.Marker({
+                    position: pos,
+                    map: map
+                });
 
-function getNames() {
-	var data = [{"besttour_id":"4","lang":"zh-tw","type":"go","besttour_name":"","stop_id":"0","stop_name":"台鐵豐原車站"},{"besttour_id":"4","lang":"zh-tw","type":"go","besttour_name":"","stop_id":"1","stop_name":"情人木橋"},{"besttour_id":"4","lang":"zh-tw","type":"go","besttour_name":"","stop_id":"2","stop_name":"花露花卉觀光農場"},{"besttour_id":"4","lang":"zh-tw","type":"go","besttour_name":"","stop_id":"3","stop_name":"鯉魚潭水庫"},{"besttour_id":"4","lang":"zh-tw","type":"go","besttour_name":"","stop_id":"4","stop_name":"后里馬場"},{"besttour_id":"4","lang":"zh-tw","type":"go","besttour_name":"","stop_id":"5","stop_name":"后豐鐵馬道"},{"besttour_id":"4","lang":"zh-tw","type":"go","besttour_name":"","stop_id":"6","stop_name":"\u7af9\u6771\u904a\u5ba2\u4e2d\u5fc3"},{"besttour_id":"4","lang":"zh-tw","type":"go","besttour_name":"","stop_id":"7","stop_name":"\u7da0\u4e16\u754c\u751f\u614b\u8fb2\u5834"},{"besttour_id":"4","lang":"zh-tw","type":"go","besttour_name":"","stop_id":"8","stop_name":"\u5317\u57d4\u8001\u8857"},{"besttour_id":"4","lang":"zh-tw","type":"go","besttour_name":"","stop_id":"9","stop_name":"\u5ce8\u7709\u7ad9"},{"besttour_id":"4","lang":"zh-tw","type":"go","besttour_name":"","stop_id":"10","stop_name":"\u7345\u5c71\u904a\u5ba2\u4e2d\u5fc3"}];
-	        return data;
-}
+
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        var contentstring = '<h2 style="background-color: #ddd; text-align: center;">' + names[i]['stop_name'] + '</h2>' + '<h3>' + names[i]['stopinfo'] + '</h3>' + ' <img  width="300" height="200" style="text-align: center; margin:auto; display:block;"  src=" ' + names[i]['stopimg'] + '" >';
+
+                        infowindow.setContent(contentstring);
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+            }
+
+            // var d = new google.maps.LatLng(23.23, 121.24);
+            // // flightPlanCoordinates.push(c);
+            //flightPlanCoordinates.push(d);
+            //flightPlanCoordinates.pop();
+            //console.log(flightPlanCoordinates);
+            var flightPath = new google.maps.Polyline({
+                path: flightPlanCoordinates,
+                geodesic: true,
+                strokeColor: '#006000',
+                strokeOpacity: 1.0,
+                strokeWeight: 5
+            });
+            map.fitBounds(bounds);
+            flightPath.setMap(map);
+
+        }
+
+
+        function getCoords() {
+            var data = ["24.254129, 120.722952", "24.255806, 120.723853", "24.254960, 120.725356", "24.256930, 120.728842", "24.256930, 120.728995", "24.265617, 120.746351", "24.273755, 120.754065", "24.276771, 120.759459", "24.277193, 120.764224", "24.276258, 120.766573", "24.274026, 120.778785", "24.274509, 120.784509", "24.273795, 120.789241",
+                "24.272428, 120.789002", "24.273754, 120.789551", "24.274687, 120.783975", "24.274826, 120.782458", "24.275019, 120.780493", "24.275510, 120.779666", "24.276199, 120.779902", "24.277021, 120.778227", "24.277021, 120.778227 ", "24.278306, 120.777615", "24.285829, 120.780621", "24.286166, 120.781649", "24.286158, 120.786115", "24.285335, 120.788742", "24.285467, 120.792577", "24.286133, 120.795653", "24.290006, 120.796673", "24.291552, 120.800011", "24.293049, 120.801156", "24.294940, 120.800868", "24.298295, 120.802681", "24.300326, 120.802203", "24.303039, 120.800353", "24.303812, 120.800850", "24.303968, 120.801508", "24.303360, 120.803400", "24.303422, 120.805092", "24.303712, 120.805993", "24.303338, 120.810408", "24.303822, 120.811660", "24.310392, 120.821506", "24.315702, 120.823798", "24.322544, 120.823799", "24.323914, 120.824049", "24.325853, 120.823270", "24.328123, 120.820877", "24.328617, 120.820821", "24.327768, 120.822129", "24.328693, 120.822143", "24.328085, 120.822672", "24.327311, 120.824230", "24.328579, 120.823298", "24.327628, 120.825232", "24.328541, 120.824661", "24.328820, 120.823673", "24.329314, 120.823771", "24.328909, 120.825023", "24.332748, 120.826213",
+                "24.335431, 120.814620", "24.333339, 120.814289", "24.332967, 120.813727", "24.333478, 120.813855", "24.333641, 120.813166", "24.334338, 120.812273", "24.335617, 120.809364", "24.335385, 120.808547", "24.334780, 120.807603", "24.334710, 120.806863", "24.334106, 120.806378", "24.334059, 120.805664", "24.336942, 120.803444", "24.336408, 120.800841", "24.336245, 120.798800", "24.335594, 120.797830", "24.334594, 120.789103", "24.333990, 120.788618", "24.333362, 120.786908", "24.332153, 120.784892", "24.332432, 120.783361", "24.332455, 120.782341", "24.331711, 120.781524", "24.332083, 120.780529", "24.333246, 120.780988", "24.333455, 120.781728", "24.333060, 120.782851", "24.333804, 120.783157", "24.336826, 120.780963", "24.338756, 120.781703", "24.338919, 120.780478", "24.339267, 120.779432", "24.337942, 120.778462", "24.336896, 120.778232", "24.336268, 120.778794", "24.335733, 120.779202", "24.335034, 120.778985", "24.334785, 120.775101", "24.336002, 120.774160", "24.336638, 120.773432", "24.336445, 120.773386",
+                "24.337578, 120.773714", "24.338717, 120.773389", "24.339119, 120.772938", "24.340583, 120.772685", "24.341799, 120.771639", "24.341898, 120.771215", "24.341528, 120.770267", "24.341717, 120.768806", "24.341199, 120.767362", "24.340911, 120.766622", "24.341264, 120.764317", "24.344042, 120.761845", "24.346574, 120.761168", "24.349183, 120.757589", "24.351738, 120.751679", "24.351508, 120.745138", "24.352091, 120.740149", "24.355447, 120.735923", "24.355126, 120.735607", "24.352957, 120.735111", "24.326140, 120.728436", "24.325754, 120.728157", "24.325343, 120.726668", "24.326066, 120.724376", "24.326025, 120.723916", "24.325137, 120.723384", "24.323559, 120.723637", "24.321249, 120.725152", "24.320976, 120.727277", "24.318762, 120.736120", "24.318540, 120.736616", "24.315942, 120.739485", "24.315325, 120.740071", "24.314593, 120.740171", "24.314026, 120.739972", "24.313467, 120.739440", "24.312834, 120.737915", "24.312291, 120.737248", "24.309364, 120.736290", "24.307271, 120.735119", "24.304352, 120.735009", "24.303004, 120.733595", "24.301393, 120.735252", "24.300085, 120.735804", "24.299099, 120.735627",
+                "24.298558, 120.735516", "24.298542, 120.732069", "24.290236, 120.732385", "24.288050, 120.730496", "24.287887, 120.722969", "24.277779, 120.722126", "24.275090, 120.731199", "24.269414, 120.747332", "24.268407, 120.749359", "24.266695, 120.747643", "24.267468, 120.747514", "24.268387, 120.747600", "24.269649, 120.747310", "24.271694, 120.740381", "24.271701, 120.740350"];
+            return data;
+        }
+
+        function getStops() {
+            var data = ["24.254129, 120.722952", "24.272428, 120.789002", "24.332748, 120.826213", "24.336445, 120.773386", "24.298864, 120.735569", "24.271701, 120.740350"];
+            return data;
+        }//Create mark
+
+        function getNames() {
+            var data = [{
+                "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "0", "stop_name": "台鐵豐原車站", "stopinfo": "豐原車站位於大台中豐原區，同時亦為南苗栗行程起點，隨著去年10月完成高架化工程，進而成為豐原區的地標之一。", "stopimg": "https://lh5.googleusercontent.com/proxy/q8qA6LxirYjR64UPVNF1Jb8ErGu2jcl1q2Y7iuuOKeZeeHT7mpnt9JUwtjnSrP-1kb_NzQr0V3vr9LgpAN7K_640-1hmSMbCkJ-nEqEgvmIz=s0-d"},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "1", "stop_name": "情人木橋", "stopinfo": "情人木橋位於萬興村的食水嵙溪上，於民國九十一年十一月竣工啟用，長40公尺寬3.5公尺的木橋，全橋沒有橋墩支撐，由北美進口大原木並請美國技師親自來台指導建設，這也是台灣第一次引進木橋建設技術，可防七級以上強震，更是遠東地區跨距最長的景觀木橋。週邊有全國最大水車及河岸觀景台，加上耀眼美麗的向日葵花園及牛車遊園服務，觀光產業前景精采可期！(取自:玩全台灣網介紹)", "stopimg":"http://farm3.static.flickr.com/2679/4166218704_ed4085fac8_o.jpg" },
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "2", "stop_name": "花露花卉觀光農場", "stopinfo": "優美的花木編織一幅悠靜，信手捻來到處散發能量花香，無法打包外賣的是空氣中 的芬多精，我們用植物的精華（精油）觸動您的嗅覺，打開您的心扉，用最在地的食材（香草）誘惑您的味蕾，入主精油城堡築您小時候的夢，來吧﹗花露農場所擁有的一切，都是為了要讓您放空之後，儲備更多的能量再出發。", "stopimg": "http://pic.pimg.tw/hellomomo8/1412780186-4181018005.jpg?v=1412780188"},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "3", "stop_name": "鯉魚潭水庫", "stopinfo": "鯉魚潭水庫位於三義鄉鯉魚潭村，為苗栗地區最大的水庫，於民國81年竣工，其主要功能為灌溉、防洪、發電及觀光。該區內擁有大量的魚蝦及天然闊葉林與次生林，加上風景秀麗，因此成為苗栗境內的著名景點之一。", "stopimg": "https://pic.pimg.tw/adgsfh1745/1441791479-3379190238_n.jpg"},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "4", "stop_name": "后里馬場", "stopinfo": "后里馬場位於台中后里區廣福村，北傍大安溪，南屏大甲溪，毗鄰豐原古稱『內埔』，至民國44年才改為后里。后里馬場創辦於民國26年，在日據時代是台灣總督府的產馬牧場，於光復後曾改隸於縣農會警備總部及軍管下。后里馬場目前占地廣達三十多公頃的馬場裡飼養著百餘隻的馬匹。除此之外，后里馬場地區同時也是后豐鐵馬道的端點，因此也可供遊客承租腳踏車，騎乘至朴子口站。", "stopimg": "http://www.taichung.gov.tw/public/data/112010/482018134471.jpg"},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "5", "stop_name": "后豐鐵馬道", "stopinfo": "后豐鐵馬道總長4.5公里，其中包含1.2公里隧道。其起點位於國道四號豐原端交界處，止於后里馬場。", "stopimg": "http://timefortaiwan.tw/d_upload_tour100/touching/photos/A0/B0/C0/D26/E796/F955/8da4b21b-fc10-46a7-a20b-fa47f15b1c9f.jpg"},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "6", "stop_name": "\u7af9\u6771\u904a\u5ba2\u4e2d\u5fc3", "stopinfo": "test", "stopimg": ""},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "7", "stop_name": "\u7da0\u4e16\u754c\u751f\u614b\u8fb2\u5834", "stopinfo": "test", "stopimg": ""},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "8", "stop_name": "\u5317\u57d4\u8001\u8857", "stopinfo": "test", "stopimg": ""},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "9", "stop_name": "\u5ce8\u7709\u7ad9", "stopinfo": "test", "stopimg": ""},
+                { "besttour_id": "4", "lang": "zh-tw", "type": "go", "besttour_name": "", "stop_id": "10", "stop_name": "\u7345\u5c71\u904a\u5ba2\u4e2d\u5fc3", "stopinfo": "test", "stopimg": ""}];
+            return data;
+        }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8wUna41vZzKsSkzXun9zfQQMpr7itAWo&amp;signed_in=true&amp;callback=initMap&amp;libraries=drawing" defer="" async=""></script>
-    
-    
-</body></html>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDcvaxzhkn4FgrrD037iTyoO-lLl7HY9o&amp;signed_in=true&amp;callback=initMap&amp;libraries=drawing" defer="" async=""></script>
+
+
+</body>
+</html>
