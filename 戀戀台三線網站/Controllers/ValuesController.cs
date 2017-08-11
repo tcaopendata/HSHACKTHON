@@ -18,6 +18,7 @@ namespace 戀戀台三線網站.Controllers
         public IEnumerable<Table> Get()
         {
             var result = from g in db.Tables
+                         orderby g.PostTime descending
                          select g;
             return result.ToList();
         }
