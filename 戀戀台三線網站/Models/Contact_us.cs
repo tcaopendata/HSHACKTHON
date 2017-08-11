@@ -9,16 +9,27 @@
 
 namespace 戀戀台三線網站.Models
 {
-    using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Contact_us
     {
         public System.Guid Id { get; set; }
+
+        [Required]
+        [StringLength(20, MinimumLength = 2)]
         public string Name { get; set; }
+
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
+
+
         public string Phone { get; set; }
+        [Required]
         public string UserComments { get; set; }
+
+
+        [System.ComponentModel.DataAnnotations.DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy/MM/dd HH:mm}")]
         public System.DateTime PostTime { get; set; }
     }
 }
