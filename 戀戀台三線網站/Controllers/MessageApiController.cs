@@ -24,9 +24,14 @@ namespace 戀戀台三線網站.Controllers
         }
 
         // GET api/<controller>/5
-        public string Get(int id)
+        public IEnumerable<Table> Get(string title)
         {
-            return "value";
+            var result = from g in db.Tables
+                         orderby g.PostTime descending
+                         where g.Title == title
+                         select g;
+
+            return result.ToList();
         }
 
         // POST api/<controller>
@@ -60,8 +65,17 @@ namespace 戀戀台三線網站.Controllers
         }
 
         // DELETE api/<controller>/5
-        public void Delete(int id)
+        [HttpDelete]
+        public string Delete(Table table, Guid id)
         {
+            table = db.Tables.Find(id);
+            if (table != null)
+            {
+               db.Tables.Remove(table);
+               db.SaveChanges();
+               return "OK";
+            }
+            return "找不到要刪除的參數";
         }
     }
 }
