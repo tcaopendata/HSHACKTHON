@@ -8,7 +8,7 @@ using 戀戀台三線網站.Models;
 
 namespace 戀戀台三線網站.Controllers
 {
-    public class ValuesController : ApiController
+    public class MessageApiController : ApiController
     {
 
         private GuestBookEntitiesweb db = new GuestBookEntitiesweb();
@@ -30,8 +30,28 @@ namespace 戀戀台三線網站.Controllers
         }
 
         // POST api/<controller>
-        public void Post([FromBody]string value)
+        //用GET的好處在於，可以使用遊覽器進行資料傳出
+        [HttpGet]
+        public string Post(Table table , string tital , string content)
         {
+
+            try
+            {
+            db.Tables.Add(new Table
+            {
+                Id = Guid.NewGuid(),
+                PostTime = DateTime.UtcNow.AddHours(08),
+                Title = tital,
+                Content = content
+            });
+            db.SaveChanges();
+            return "OK";
+            }
+            catch (Exception e)
+            {
+                return "無資料傳入";
+            }
+
         }
 
         // PUT api/<controller>/5

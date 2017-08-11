@@ -55,7 +55,7 @@ namespace 戀戀台三線網站.Controllers
             if (ModelState.IsValid)
             {
                 table.Id = Guid.NewGuid();
-                table.PostTime = DateTime.UtcNow.AddHours(08); 
+                table.PostTime = DateTime.UtcNow.AddHours(08); //台灣時間+08
                 db.Tables.Add(table);
                 db.SaveChanges();
                 return RedirectToAction("Index");
