@@ -54,7 +54,7 @@ namespace 戀戀台三線網站.Controllers
             }
             catch (Exception e)
             {
-                return "無資料傳入";
+                return "資料無法傳入";
             }
 
         }
