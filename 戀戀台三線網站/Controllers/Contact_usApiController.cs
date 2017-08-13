@@ -27,7 +27,7 @@ namespace 戀戀台三線網站.Controllers
         {
             var result = from x in db.Contact_us
                          orderby x.PostTime descending
-                         where x.Name == name
+                         where x.Name.Contains(name)
                          select x;
             return result.ToList();
         }

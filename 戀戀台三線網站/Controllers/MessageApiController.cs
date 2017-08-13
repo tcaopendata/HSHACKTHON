@@ -28,10 +28,9 @@ namespace 戀戀台三線網站.Controllers
         {
             var result = from g in db.Tables
                          orderby g.PostTime descending
-                         where g.Title == title
+                         where g.Title.Contains(title)
                          select g;
-
-            return result.ToList();
+                return result.ToList();
         }
 
         // POST api/<controller>
@@ -39,7 +38,6 @@ namespace 戀戀台三線網站.Controllers
         [HttpGet]
         public string Post(Table table , string tital , string content)
         {
-
             try
             {
             db.Tables.Add(new Table
