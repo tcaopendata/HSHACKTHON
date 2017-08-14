@@ -142,3 +142,4 @@ D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\ko\System.Spatial.
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\ru\System.Spatial.resources.dll
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\zh-Hans\System.Spatial.resources.dll
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\zh-Hant\System.Spatial.resources.dll
+D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\zh-Hant\EntityFramework.resources.dll
