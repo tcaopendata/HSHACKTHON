@@ -27,20 +27,20 @@
 // Brisbane, Australia.
 
 
-function initMap() {
-	var map = new google.maps.Map(document.getElementById('map'), {
-			//zoom: 1,
-			// center: {lat: 25, lng: 121},
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
-	var bounds = new google.maps.LatLngBounds();
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                //zoom: 1,
+                // center: {lat: 25, lng: 121},
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+            map.data.loadGeoJson('https://storage.googleapis.com/mapsdevsite/json/google.json');
+            map.data.loadGeoJson('../GeoJson/TWNGrid.json');
+            map.data.setStyle({
+                fillOpacity: 0
+            });
 
-	// var flightPlanCoordinates = [
-	//   {lat: 37.772, lng: -122.214},
-	//   {lat: 21.291, lng: -157.821},
-	//   {lat: -18.142, lng: 178.431},
-	//   {lat: -27.467, lng: 153.027}
-	// ];
+
+	var bounds = new google.maps.LatLngBounds();
 	var flightPlanCoordinates = new Array();
 
 
@@ -82,11 +82,6 @@ function initMap() {
 	       })(marker, i));
 	}
 	
-// var d = new google.maps.LatLng(23.23, 121.24);
-// // flightPlanCoordinates.push(c);
-	//flightPlanCoordinates.push(d);
-	//flightPlanCoordinates.pop();
-	//console.log(flightPlanCoordinates);
 	var flightPath = new google.maps.Polyline({
 		path: flightPlanCoordinates,
 		geodesic: true,

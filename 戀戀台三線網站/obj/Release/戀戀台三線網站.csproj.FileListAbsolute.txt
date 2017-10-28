@@ -75,8 +75,6 @@ D:\C#_Project\戀戀台三線網站\戀戀台三線網站\obj\Release\戀戀台�
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\EntityFramework.dll
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\EntityFramework.SqlServer.dll
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\Microsoft.Data.Tools.Schema.Sql.dll
-D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
-D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\Microsoft.Data.Tools.Utilities.dll
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\Microsoft.SqlServer.TransactSql.ScriptDom.dll
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\Microsoft.SqlServer.Types.dll
@@ -84,7 +82,6 @@ D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\Microsoft.VisualSt
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\EntityFramework.xml
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\EntityFramework.SqlServer.xml
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\zh-hant\Microsoft.Data.Tools.Schema.Sql.resources.dll
-D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\zh-hant\Microsoft.Data.Tools.Schema.Sql.UnitTesting.resources.dll
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\zh-hant\Microsoft.Data.Tools.Utilities.resources.dll
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\zh-hant\Microsoft.SqlServer.TransactSql.ScriptDom.resources.dll
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\de\Microsoft.SqlServer.Types.resources.dll
@@ -142,3 +139,8 @@ D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\ko\System.Spatial.
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\ru\System.Spatial.resources.dll
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\zh-Hans\System.Spatial.resources.dll
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\zh-Hant\System.Spatial.resources.dll
+D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\zh-Hant\EntityFramework.resources.dll
+D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
+D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\zh-hant\Microsoft.Data.Tools.Schema.Sql.UnitTesting.resources.dll
+D:\C#_Project\戀戀台三線網站\戀戀台三線網站\bin\zh-Hant\EntityFramework.SqlServer.resources.dll

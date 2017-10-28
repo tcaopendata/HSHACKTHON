@@ -1,0 +1,8 @@
+D:\C#_Project\戀戀台三線網站\PostData\bin\Debug\PostData.exe.config
+D:\C#_Project\戀戀台三線網站\PostData\bin\Debug\PostData.exe
+D:\C#_Project\戀戀台三線網站\PostData\bin\Debug\PostData.pdb
+D:\C#_Project\戀戀台三線網站\PostData\bin\Debug\Newtonsoft.Json.dll
+D:\C#_Project\戀戀台三線網站\PostData\bin\Debug\Newtonsoft.Json.xml
+D:\C#_Project\戀戀台三線網站\PostData\obj\Debug\PostContact_us.csprojResolveAssemblyReference.cache
+D:\C#_Project\戀戀台三線網站\PostData\obj\Debug\PostData.exe
+D:\C#_Project\戀戀台三線網站\PostData\obj\Debug\PostData.pdb

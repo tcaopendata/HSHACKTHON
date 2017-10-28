@@ -213,6 +213,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\GuestBook.mdf" />
     <Content Include="App_Data\GuestBook_log.ldf">
       <DependentUpon>GuestBook.mdf</DependentUpon>
@@ -229,6 +233,7 @@
     <Content Include="Image\LOGO-黑.png" />
     <Content Include="Image\LOGO.png" />
     <Content Include="Image\Shortcut_Icon.png" />
+    <Content Include="Map\OpenlayersTest.html" />
     <Content Include="Map\Map3.html" />
     <Content Include="Map\Map2.html" />
     <Content Include="Map\Map1.html" />
@@ -255,6 +260,8 @@
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="GeoJson\google.json" />
+    <Content Include="GeoJson\TWNGrid.json" />
     <None Include="Properties\PublishProfiles\loveTaiwan3rdRoad - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\loveTaiwan3rdRoad - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

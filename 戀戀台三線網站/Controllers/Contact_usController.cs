@@ -17,7 +17,10 @@ namespace 戀戀台三線網站.Controllers
         // GET: Contact_us
         public ActionResult Index()
         {
-            return View(db.Contact_us.ToList());
+            var model =(from e in db.Contact_us
+                        orderby e.PostTime descending
+                        select e).Take(50);
+            return View(model.ToList());
         }
 
         // GET: Contact_us/Details/5

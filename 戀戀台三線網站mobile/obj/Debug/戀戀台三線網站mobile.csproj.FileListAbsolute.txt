@@ -77,3 +77,4 @@ D:\C#_Project\戀戀台三線網站\戀戀台三線網站mobile\bin\EntityFramew
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站mobile\bin\EntityFramework.xml
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站mobile\bin\EntityFramework.SqlServer.xml
 D:\C#_Project\戀戀台三線網站\戀戀台三線網站mobile\bin\zh-Hant\EntityFramework.resources.dll
+D:\C#_Project\戀戀台三線網站\戀戀台三線網站mobile\bin\zh-Hant\EntityFramework.SqlServer.resources.dll

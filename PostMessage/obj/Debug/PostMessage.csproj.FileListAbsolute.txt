@@ -1,0 +1,6 @@
+D:\C#_Project\戀戀台三線網站\PostMessage\bin\Debug\PostMessage.exe.config
+D:\C#_Project\戀戀台三線網站\PostMessage\bin\Debug\PostMessage.exe
+D:\C#_Project\戀戀台三線網站\PostMessage\bin\Debug\PostMessage.pdb
+D:\C#_Project\戀戀台三線網站\PostMessage\obj\Debug\PostMessage.csprojResolveAssemblyReference.cache
+D:\C#_Project\戀戀台三線網站\PostMessage\obj\Debug\PostMessage.exe
+D:\C#_Project\戀戀台三線網站\PostMessage\obj\Debug\PostMessage.pdb

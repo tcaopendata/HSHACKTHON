@@ -13,15 +13,16 @@ namespace 戀戀台三線網站.Controllers
     public class MessageBoardController : Controller
     {
         private GuestBookEntitiesweb db = new GuestBookEntitiesweb();
-
+        
         // GET: MessageBoard
+        //依照發文時間排序，並限制前50則貼文
         public ActionResult Index()
         {
-            //依照發文時間排序，並限制前50則貼文
-            var model = (from e in db.Tables
+            IEnumerable<Table> model = (from e in db.Tables
                          orderby e.PostTime descending
                          select e).Take(50);
             return View(model.ToList());
+
         }
 
         // GET: MessageBoard/Details/5

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "戀戀台三線網站", "�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "戀戀台三線網站mobile", "戀戀台三線網站mobile\戀戀台三線網站mobile.csproj", "{1DDC2872-C821-4B12-9C99-2C310E416C38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostContact_us", "PostData\PostContact_us.csproj", "{7390CEA1-A107-4046-A0F7-6C280AC46F18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostMessage", "PostMessage\PostMessage.csproj", "{570DA006-F804-402B-B742-5814B9B97264}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{1DDC2872-C821-4B12-9C99-2C310E416C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DDC2872-C821-4B12-9C99-2C310E416C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DDC2872-C821-4B12-9C99-2C310E416C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7390CEA1-A107-4046-A0F7-6C280AC46F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7390CEA1-A107-4046-A0F7-6C280AC46F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7390CEA1-A107-4046-A0F7-6C280AC46F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7390CEA1-A107-4046-A0F7-6C280AC46F18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{570DA006-F804-402B-B742-5814B9B97264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{570DA006-F804-402B-B742-5814B9B97264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{570DA006-F804-402B-B742-5814B9B97264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{570DA006-F804-402B-B742-5814B9B97264}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

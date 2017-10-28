@@ -201,6 +201,7 @@
       <LastGenOutput>Contact_us.Context.cs</LastGenOutput>
       <DependentUpon>Contact_us.edmx</DependentUpon>
     </Content>
+    <Content Include="Models\Contact_us.edmx.sql" />
     <Content Include="Models\Contact_us.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Contact_us.edmx</DependentUpon>
