@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="D:\C#_Project\戀戀台三線網站\戀戀台三線網站\obj\Release\Package\PackageTmp" />
-  <setAcl path="D:\C#_Project\戀戀台三線網站\戀戀台三線網站\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
-  <setAcl path="D:\C#_Project\戀戀台三線網站\戀戀台三線網站\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
-  <setAcl path="D:\C#_Project\戀戀台三線網站\戀戀台三線網站\obj\Release\Package\PackageTmp\App_Data" setAclResourceType="Directory" setAclAccess="Write" />
+  <IisApp path="C:\專案\戀戀台三線網站\戀戀台三線網站\obj\Release\Package\PackageTmp" />
+  <setAcl path="C:\專案\戀戀台三線網站\戀戀台三線網站\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\專案\戀戀台三線網站\戀戀台三線網站\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+  <setAcl path="C:\專案\戀戀台三線網站\戀戀台三線網站\obj\Release\Package\PackageTmp\App_Data" setAclResourceType="Directory" setAclAccess="Write" />
 </sitemanifest>

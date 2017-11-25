@@ -2,6 +2,7 @@
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <SSDTUnitTestPath Condition="'$(SSDTUnitTestPath)' == ''">$(VsInstallRoot)\Common7\IDE\Extensions\Microsoft\SQLDB</SSDTUnitTestPath>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup>
     <SSDTPath Condition="'$(SSDTPath)' == ''">$(VsInstallRoot)\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\130</SSDTPath>
@@ -211,6 +212,7 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SendMail.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Database1.mdf" />
@@ -227,8 +229,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Image\1.png" />
     <Content Include="Image\AD_logo.png" />
     <Content Include="Image\Bus_icon.png" />
+    <Content Include="Image\icons8-bicycle-50.png" />
     <Content Include="Image\LOGO-白.png" />
     <Content Include="Image\LOGO-黑.png" />
     <Content Include="Image\LOGO.png" />
@@ -237,6 +241,7 @@
     <Content Include="Map\Map3.html" />
     <Content Include="Map\Map2.html" />
     <Content Include="Map\Map1.html" />
+    <Content Include="Map\OpenLayersControl.html" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -247,6 +252,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="package\ol-debug.js" />
+    <Content Include="package\ol.css" />
+    <Content Include="package\ol.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -262,6 +270,9 @@
     </Content>
     <Content Include="GeoJson\google.json" />
     <Content Include="GeoJson\TWNGrid.json" />
+    <Content Include="Data\HSUbike.json" />
+    <None Include="Properties\PublishProfiles\HShackOpendata - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\HShackOpendata - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\loveTaiwan3rdRoad - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\loveTaiwan3rdRoad - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -273,6 +284,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\OpenLayersControl.js" />
+    <Content Include="Scripts\openMap.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Web.config" />
@@ -303,6 +316,7 @@
     <Content Include="Views\Contact_us\Details.cshtml" />
     <Content Include="Views\Contact_us\Edit.cshtml" />
     <Content Include="Views\Contact_us\Index.cshtml" />
+    <Content Include="Views\Home\Map.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

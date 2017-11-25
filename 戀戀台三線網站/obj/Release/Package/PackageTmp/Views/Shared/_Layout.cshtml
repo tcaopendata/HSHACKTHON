@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
@@ -9,6 +9,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <style>
+        @RenderSection("style" ,required:false)
         .contact-info {
             font-size: 20px;
         }
@@ -36,7 +37,7 @@
     </style>
 
 </head>
-<body>
+<body onload="mapinit()">
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -57,9 +58,10 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("首頁", "Index", "Home")</li>
                     <li>@Html.ActionLink("景點介紹", "Attractions", "Home")</li>
-                    <li>@Html.ActionLink("地圖 & 班次", "Transportation", "Home")</li>
+                    <li>@Html.ActionLink("班次", "Transportation", "Home")</li>
                     <li>@Html.ActionLink("聯絡我們", "Create", "Contact_us")</li>
                     <li>@Html.ActionLink("留言板", "index", "MessageBoard")</li>
+                    <li>@Html.ActionLink("地圖", "Map", "Home")</li>
                 </ul>
             </div>
         </div>

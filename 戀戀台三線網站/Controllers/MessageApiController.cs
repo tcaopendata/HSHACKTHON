@@ -12,7 +12,6 @@ namespace 戀戀台三線網站.Controllers
     {
 
         private GuestBookEntitiesweb db = new GuestBookEntitiesweb();
-
         // GET api/<controller>
         [HttpGet]
         public IEnumerable<Table> Get()
@@ -50,12 +49,62 @@ namespace 戀戀台三線網站.Controllers
             db.SaveChanges();
             return "OK";
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
                 return "資料無法傳入";
             }
 
         }
+
+        [HttpPost]
+        public bool Postmessage([FromBody]Table table)
+        {
+            bool result = false;
+            try
+            {
+                db.Tables.Add(new Table()
+                {
+                    Id = Guid.NewGuid(),
+                    PostTime = DateTime.UtcNow.AddHours(08),
+                    Title = table.Title,
+                    Content = table.Content
+                });
+                db.SaveChanges();
+                result = true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return result;
+        }
+
+        [HttpPost]
+        public bool PostList([FromBody]List<Table> tableList)
+        {
+            bool result = false;
+            try
+            {
+                Table temp;
+                foreach (Table table in tableList)
+                {
+                    temp = new Table();
+                    temp.Id = Guid.NewGuid();
+                    temp.PostTime = DateTime.UtcNow.AddHours(08);
+                    temp.Title = table.Title;
+                    temp.Content = table.Content;
+                    db.Tables.Add(temp);
+                }
+                db.SaveChanges();
+                result = true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return result;
+        }
+
 
         // PUT api/<controller>/5
         public void Put(int id, [FromBody]string value)

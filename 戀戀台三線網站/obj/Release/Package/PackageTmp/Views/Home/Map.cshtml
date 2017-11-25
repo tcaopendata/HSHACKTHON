@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Map";
+}
+
+
+<div id="map" class="map"></div>
+<div id="menu">
+    <button id="zoom_out" onclick="zoom_out()">點擊縮小</button>
+    <button id="zoom_in" onclick="zoom_in()">點擊放大</button>
+    <button id="panto" onclick="panto()">平移到新莊</button>
+    <button id="restore" onclick="restore()">復位</button>
+    @*<button id="restore" onclick="test()">test</button>*@
+</div>
+
+<div class="col-sm-12" style="line-height:1000%">
+    <h1 class="text-center">Map 2</h1>
+    <style>
+        .embed-container {
+            position: relative;
+            padding-bottom: 80%;
+            height: 0;
+            max-width: 100%;
+        }
+
+            .embed-container iframe, .embed-container object, .embed-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 75%;
+            }
+
+        small {
+            position: absolute;
+            z-index: 40;
+            bottom: 0;
+            margin-bottom: -15px;
+        }
+    </style><div class="embed-container">
+        <iframe width="100" height="450" src="~/Map/openlayer2.html" frameborder="0" scrolling="no"></iframe>
+    </div>
+    </div>
+
+    <script src="~/Scripts/openMap.js"></script>
+    <script src="~/package/ol-debug.js"></script>
+    <script src="~/package/ol.js"></script>
+    <link href="~/package/ol.css" rel="stylesheet" />

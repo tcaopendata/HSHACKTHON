@@ -4,3 +4,11 @@ D:\C#_Project\戀戀台三線網站\PostMessage\bin\Debug\PostMessage.pdb
 D:\C#_Project\戀戀台三線網站\PostMessage\obj\Debug\PostMessage.csprojResolveAssemblyReference.cache
 D:\C#_Project\戀戀台三線網站\PostMessage\obj\Debug\PostMessage.exe
 D:\C#_Project\戀戀台三線網站\PostMessage\obj\Debug\PostMessage.pdb
+D:\C#_Project\戀戀台三線網站\PostMessage\obj\Debug\PostMessage.csproj.CoreCompileInputs.cache
+F:\C#_Project\戀戀台三線網站\PostMessage\obj\Debug\PostMessage.csprojResolveAssemblyReference.cache
+F:\C#_Project\戀戀台三線網站\PostMessage\obj\Debug\PostMessage.csproj.CoreCompileInputs.cache
+F:\C#_Project\戀戀台三線網站\PostMessage\obj\Debug\PostMessage.exe
+F:\C#_Project\戀戀台三線網站\PostMessage\obj\Debug\PostMessage.pdb
+F:\C#_Project\戀戀台三線網站\PostMessage\bin\Debug\PostMessage.exe.config
+F:\C#_Project\戀戀台三線網站\PostMessage\bin\Debug\PostMessage.exe
+F:\C#_Project\戀戀台三線網站\PostMessage\bin\Debug\PostMessage.pdb

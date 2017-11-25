@@ -6,3 +6,13 @@ D:\C#_Project\戀戀台三線網站\PostData\bin\Debug\Newtonsoft.Json.xml
 D:\C#_Project\戀戀台三線網站\PostData\obj\Debug\PostContact_us.csprojResolveAssemblyReference.cache
 D:\C#_Project\戀戀台三線網站\PostData\obj\Debug\PostData.exe
 D:\C#_Project\戀戀台三線網站\PostData\obj\Debug\PostData.pdb
+D:\C#_Project\戀戀台三線網站\PostData\obj\Debug\PostContact_us.csproj.CoreCompileInputs.cache
+F:\C#_Project\戀戀台三線網站\PostData\bin\Debug\PostData.exe.config
+F:\C#_Project\戀戀台三線網站\PostData\bin\Debug\PostData.exe
+F:\C#_Project\戀戀台三線網站\PostData\bin\Debug\PostData.pdb
+F:\C#_Project\戀戀台三線網站\PostData\bin\Debug\Newtonsoft.Json.dll
+F:\C#_Project\戀戀台三線網站\PostData\bin\Debug\Newtonsoft.Json.xml
+F:\C#_Project\戀戀台三線網站\PostData\obj\Debug\PostContact_us.csprojResolveAssemblyReference.cache
+F:\C#_Project\戀戀台三線網站\PostData\obj\Debug\PostContact_us.csproj.CoreCompileInputs.cache
+F:\C#_Project\戀戀台三線網站\PostData\obj\Debug\PostData.exe
+F:\C#_Project\戀戀台三線網站\PostData\obj\Debug\PostData.pdb

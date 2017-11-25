@@ -33,5 +33,11 @@ namespace 戀戀台三線網站.Controllers
             return View();
         }
 
+        public ActionResult Map()
+        {
+            ViewBag.Message = "Your contact page.";
+            return View();
+        }
+
     }
 }

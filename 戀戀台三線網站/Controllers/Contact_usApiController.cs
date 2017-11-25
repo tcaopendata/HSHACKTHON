@@ -75,5 +75,34 @@ namespace 戀戀台三線網站.Controllers
             }
             return "找不到要刪除的參數";
         }
+
+        [HttpPost]
+        public bool PostList([FromBody]List<Contact_us>contact_usList)
+        {
+            bool status = false;
+            try
+            {
+                Contact_us temp;
+                foreach(Contact_us contact_us in contact_usList)
+                {
+                    temp = new Contact_us();
+                    temp.Id = Guid.NewGuid();
+                    temp.Name = contact_us.Name;
+                    temp.UserComments = contact_us.UserComments;
+                    temp.Phone = contact_us.Phone;
+                    temp.Email = contact_us.Email;
+                    temp.PostTime = DateTime.UtcNow.AddHours(08);
+                    db.Contact_us.Add(temp);
+                }
+                db.SaveChanges();
+                status = true;
+               
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+            return status;
+        }
     }
 }
